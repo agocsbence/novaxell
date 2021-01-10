@@ -24,15 +24,7 @@ $desktop-large:                 2200px;
 @import 'grid';
 @import 'fonts';
 //import pages and components
-@import 'components/header';
-@import 'components/footer';
 @import 'components/hero';
-@import 'components/entry';
-@import 'components/animations';
-@import 'components/button';
-@import 'components/background';
-@import 'components/textanim/base';
-@import 'components/textanim/module';
 @import 'pages/home';
 
 //style
@@ -107,7 +99,7 @@ marquee {
 
 //classes
 .container {
-    max-width: 960px;
+    max-width: 1200px;
     margin: 0 auto;
     position: relative;
     @media screen and (max-width: $tablet) {
