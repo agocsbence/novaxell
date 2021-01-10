@@ -1,0 +1,24 @@
+.btn {
+    @include skew(20, 0);
+    display: inline-block;
+    border-radius: 4px;
+    padding: 10px 29px;
+    margin: 10px;
+    .btn-text {
+        @include skew(-20, 0);
+        color: $white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &.img-right img {margin-left: 1rem;}
+        &.img-left img {margin-right: 1rem;}
+        img {max-height: 1.2rem;}
+    }
+    &.btn-transparent {
+        box-shadow: none;
+        background: transparent;
+        .btn-text {color: $gray;}
+    }
+    &.btn-green {background: $green; box-shadow: 5px 10px 10px $green-shadow;}
+    &.btn-gradient {background: $gradient-green; box-shadow: 5px 10px 10px $green-shadow;}
+}

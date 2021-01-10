@@ -1,40 +1,41 @@
-@font-face {
-    font-family: 'BorgiaPro-Regular';
-    src:  url('fonts/BorgiaPro-Regular-webfont.woff2') format('woff2'),
-          url('fonts/BorgiaPro-Regular-webfont.woff') format('woff');
+h1, h2 {font-family: $font-display; font-weight: 600; color: $black;}
+h3, h4, h5, h6 {font-family: $font-base; color: $black}
+h1 {font-size: 48px; line-height: 58px;}
+.h3-bigger { margin-bottom: 10px; font-size: 27px; line-height: 31px; font-weight: 900;}
+li, p {
+    font-size: $font-size;
+    line-height: 30px;
+    font-weight: 400;
+    font-family: $font-base;
+    color: $gray;
 }
-@font-face {
-    font-family: 'BorgiaPro-Italic';
-    src:  url('fonts/BorgiaPro-Italic-webfont.woff2') format('woff2'),
-          url('fonts/BorgiaPro-Italic-webfont.woff') format('woff');
+p { margin-bottom: 15px; }
+small { font-size: 50%; }
+.small, h1, h2, h3 { margin-bottom: 20px; }
+strong {font-weight: 500;}
+marquee {
+    img {
+        height: $font-size;
+        width: auto;
+    }
 }
-@font-face {
-    font-family: 'BorgiaPro-Bold';
-    src:  url('fonts/BorgiaPro-Bold-webfont.woff2') format('woff2'),
-          url('fonts/BorgiaPro-Bold-webfont.woff') format('woff');
-}
-@font-face {
-    font-family: 'BorgiaPro-BoldItalic';
-    src:  url('fonts/BorgiaPro-BoldItalic-webfont.woff2') format('woff2'),
-          url('fonts/BorgiaPro-BoldItalic-webfont.woff') format('woff');
-}
-
 .font-400 {
-    font-family: stevie-sans, sans-serif;
+    font-family: $font-base;
     font-weight: 400;
     font-style: normal;
 }
+.font-500 {
+    font-family: $font-base;
+    font-weight: 500;
+    font-style: normal;
+}
+.font-600 {
+    font-family: $font-display;
+    font-weight: 600;
+    font-style: normal;
+}
 .font-700 {
-    font-family: stevie-sans, sans-serif;
+    font-family: $font-base;
     font-weight: 700;
     font-style: normal;
 }
-.font-900 {
-    font-family: stevie-sans, sans-serif;
-    font-weight: 900;
-    font-style: normal;
-}
-.font-regular {font-family: 'BorgiaPro-Regular';}
-.font-bold {font-family: 'BorgiaPro-Bold';}
-.font-italic {font-family: 'BorgiaPro-Italic';}
-.font-bold-italic {font-family: 'BorgiaPro-BoldItalic';}

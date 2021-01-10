@@ -1,0 +1,22 @@
+header {
+    background: $pureWhite;
+    box-shadow: 5px 10px 10px $shadow;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding: 1rem 3.75rem;
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        a {
+            margin: 0 15px;
+            font-weight: 500;
+            color: $black;
+            &:hover,
+            &:active { color: $green; }
+        }
+    }
+}
