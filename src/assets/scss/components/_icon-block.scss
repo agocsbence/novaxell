@@ -1,0 +1,29 @@
+.icon-block {
+    margin-bottom: 2rem;
+    display: grid;
+    grid-template-areas:
+        "icon title"
+        "icon text"
+        ". button";
+    @media screen and (max-width: $tablet) {
+        grid-template-areas:
+            "icon title"
+            "text"
+            "button";
+    }
+    .icon {
+        grid-area: icon;
+        margin-right: 1.5rem;
+    }
+    .title {
+        grid-area: title;
+        font-weight: 500;
+    }
+    p { grid-area: text; margin: 0;}
+    .btn {
+        grid-area: button;
+        justify-self: end;
+        margin: 0;
+        padding: 0;
+    }
+}

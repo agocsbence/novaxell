@@ -1,6 +1,9 @@
 h1, h2 {font-family: $font-display; font-weight: 600; color: $black;}
 h3, h4, h5, h6 {font-family: $font-base; color: $black}
 h1 {font-size: 48px; line-height: 58px;}
+h2.lead {
+    span {color: $green; font-size: 1.5rem;}
+}
 .h3-bigger { margin-bottom: 10px; font-size: 27px; line-height: 31px; font-weight: 900;}
 li, p {
     font-size: $font-size;

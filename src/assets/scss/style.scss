@@ -49,11 +49,13 @@ $desktop-large:                 2200px;
 
 //import basics
 @import 'reset';
-@import 'grid';
+@import 'layout';
 @import 'fonts';
 //import pages and components
 @import 'components/header';
 @import 'components/button';
+@import 'components/icon-block';
+@import 'sections/hero';
 @import 'pages/home';
 
 //style
@@ -113,6 +115,11 @@ img {
         max-width: 90%;
     }
 }
+.container-fluid {
+    max-width: 100vw;
+    margin: 0 auto;
+    position: relative;
+}
 .wrapper {
     position: relative;
     width: 100%;
@@ -122,6 +129,7 @@ img {
 .margin-bottom-0 { margin-bottom: 0; }
 
 .bg--white { background-color: $white; color: $black; }
+.bg--pureWhite { background-color: $pureWhite; color: $black; }
 .bg--black { background-color: $black; color: $white; }
 .bg--blue { background-color: $blue; color: $white; }
 
@@ -142,6 +150,7 @@ img {
 
 .text-right {text-align: right;}
 .text-left {text-align: left;}
+.text-center {text-align: center;}
 
 .hide {display: none;}
 .show {display: block;}
