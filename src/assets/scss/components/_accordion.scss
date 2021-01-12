@@ -5,12 +5,27 @@
 	border: 1px solid $border-color;
 	border-radius: 6px;
 	box-shadow: 5px 10px 10px $shadow;
+	margin-bottom: 1rem;
+	box-sizing: content-box;
+	&.active, &:hover {
+		border: 2px solid $green;
+	}
+	&.active {
+		.accordion {
+			background: $gradient-green;
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+		}
+	}
 }
 .accordion {
 	width: 100%;
 	cursor: pointer;
 	transition: all .3s ease;
 	outline: none;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
 	&:after {
 		content: '\02795'; /* Unicode character for "plus" sign (+) */
 		font-size: 13px;
@@ -18,18 +33,12 @@
 		float: right;
 		margin-left: 5px;
 	}
-}
-
-.active:after {
-    content: "\2796"; /* Unicode character for "minus" sign (-) */
-}
-
-.active, .accordion:hover {
-  border: 1px solid $green;
+	&.active:after {
+		content: "\2796"; /* Unicode character for "minus" sign (-) */
+	}
 }
 
 .panel {
-    padding: 0 18px;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
