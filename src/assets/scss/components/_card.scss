@@ -1,11 +1,16 @@
 .card {
     background: $pureWhite;
-    border: 1px solid $second-gray;
+    border: 1px solid $border-color;
     border-radius: 12px;
     padding: 5px;
+    .card-text, .card-buttons {margin: 1rem;}
+    .card-text {
+        h3 {font-weight: 500;}
+    }
     .card-buttons {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        margin-top: 0;
     }
 }
