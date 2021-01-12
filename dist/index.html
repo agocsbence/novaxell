@@ -145,6 +145,7 @@
 			<section id="components" class="bg--white">
 				<div class="container">
 					<h1>more components</h1>
+					<h2>card</h2>
 					<div class="comp grid grid-3">
 						<div class="card">
 							<img src="./assets/img/blocks/card.jpg" alt="" class="card-image">
@@ -210,6 +211,39 @@
 							</div>
 						</div>
 					</div>
+				</div>
+				<div class="container">
+					<h2>accordion</h2>
+					<button class="accordion">Section 1</button>
+					<div class="panel">
+						<p>Lorem ipsum...</p>
+					</div>
+
+					<button class="accordion">Section 2</button>
+					<div class="panel">
+						<p>Lorem ipsum...</p>
+					</div>
+
+					<button class="accordion">Section 3</button>
+					<div class="panel">
+						<p>Lorem ipsum...</p>
+					</div>
+					<script>
+						var acc = document.getElementsByClassName("accordion");
+						var i;
+						
+						for (i = 0; i < acc.length; i++) {
+						  acc[i].addEventListener("click", function() {
+							this.classList.toggle("active");
+							var panel = this.nextElementSibling;
+							if (panel.style.maxHeight) {
+							  panel.style.maxHeight = null;
+							} else {
+							  panel.style.maxHeight = panel.scrollHeight + "px";
+							}
+						  });
+						}
+						</script>
 				</div>
 			</section>
 
