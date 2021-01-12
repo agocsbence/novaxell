@@ -20,6 +20,7 @@
         .btn-text {color: $gray;}
     }
     &.btn-green {background: $green; box-shadow: 5px 10px 10px $green-shadow;}
+    &.btn-blue {background: $blue; box-shadow: 5px 10px 10px $green-shadow;}
     &.btn-gradient {background: $gradient-green; box-shadow: 5px 10px 10px $green-shadow;}
     &.btn-plain {
         .btn-text {color: $green;}
