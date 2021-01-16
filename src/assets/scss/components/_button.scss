@@ -25,4 +25,11 @@
     &.btn-plain {
         .btn-text {color: $green;}
     }
+    &.btn-submit {
+        // @include skew(-20, 0);
+        color: $white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }

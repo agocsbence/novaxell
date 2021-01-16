@@ -53,10 +53,12 @@ $desktop-large:                 2200px;
 @import 'fonts';
 //import pages and components
 @import 'components/header';
+@import 'components/footer';
 @import 'components/button';
 @import 'components/icon-block';
 @import 'components/card';
 @import 'components/accordion';
+@import 'components/form';
 @import 'sections';
 @import 'pages/home';
 
@@ -132,6 +134,7 @@ img {
 
 .bg--white { background-color: $white; color: $black; }
 .bg--pureWhite { background-color: $pureWhite; color: $black; }
+.bg--green { background-color: $green; color: $white; }
 .bg--black { background-color: $black; color: $white; }
 .bg--blue { background-color: $blue; color: $white; }
 
