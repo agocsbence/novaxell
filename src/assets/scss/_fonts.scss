@@ -12,6 +12,10 @@ li, p {
     font-family: $font-base;
     color: $gray;
 }
+.subtitle {
+    margin: 0 auto;
+    max-width: 30rem;
+}
 p { margin-bottom: 15px; }
 small { font-size: 50%; }
 .small, h1, h2, h3 { margin-bottom: 20px; }
