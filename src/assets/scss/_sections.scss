@@ -59,9 +59,21 @@
             &.padding-left {
                 padding-left: 1rem;
                 font-size: .875rem;
+                @media screen and (max-width: $mobile) {
+                    padding-left: 2rem;
+                    &+.detail-data {
+                        padding-left: 2rem;
+                    }
+                }
             }
         }
-        .detail-data {font-weight: 700;}
+        .detail-data {
+            font-weight: 700;
+            @media screen and (max-width: $mobile) {
+                margin-left: 2rem;
+                margin-top: -10px;
+            }
+        }
     }
 }
 .section-about-team {

@@ -8,5 +8,8 @@
         font-weight: 500;
         display: flex;
         align-items: center;
+        @media screen and (max-width: $mobile) {
+            font-size: 20px;
+        }
     }
 }
