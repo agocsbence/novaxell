@@ -1,7 +1,7 @@
 .accordion-wrapper {
     background-color: $pureWhite;
     padding: 20px;
-    width: 100%;
+    width: calc(100% - 40px);
 	border: 1px solid $border-color;
 	border-radius: 6px;
 	box-shadow: 5px 10px 10px $shadow;

@@ -57,10 +57,11 @@ $desktop-large:                 2200px;
 @import 'components/button';
 @import 'components/icon-block';
 @import 'components/card';
+@import 'components/icon-card';
+@import 'components/image-card';
 @import 'components/accordion';
 @import 'components/form';
 @import 'sections';
-@import 'pages/home';
 
 //style
 //tags
@@ -72,8 +73,8 @@ $desktop-large:                 2200px;
     box-sizing: border-box;
 }
 
-::-moz-selection { background: $blue; color: $black; }
-::selection { background: $blue; color: $black; }
+::-moz-selection { background: $green; color: $white; }
+::selection { background: $green; color: $white; }
 html{ scroll-behavior: smooth; background: $green; }
 body {
     background-color: $pureWhite;
@@ -141,15 +142,15 @@ img {
 .text-green {color: $green;}
 
 .mobile-only {
-    display: none;
+    display: none !important;
     @media screen and (max-width: $tablet) {
-        display: block;
+        display: block !important;
     }
 }
 .desktop-only {
-    display: block;
+    display: block !important;
     @media screen and (max-width: $tablet) {
-        display: none;
+        display: none !important;
     }
 }
 
@@ -159,3 +160,11 @@ img {
 
 .hide {display: none;}
 .show {display: block;}
+
+.bordered {
+    background: $pureWhite;
+    border: 1px solid $border-color;
+    border-radius: 6px;
+    padding: 15px;
+    box-shadow: 5px 10px 20px $shadow;
+}

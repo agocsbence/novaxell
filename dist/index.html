@@ -7,6 +7,7 @@
 
 		<link rel="preconnect" href="https://fonts.gstatic.com">
 		<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="./assets/css/hamburger.css">
         <link rel="stylesheet" href="./assets/css/style.css" type="text/css" />
 		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 		<!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" type="text/javascript"></script><![endif]-->
@@ -17,7 +18,7 @@
 	<body class="body">
 		<header>
 			<a href="#" class="logo"><img src="./assets/img/header_logo.svg" alt=""></a>
-			<div class="navbar">
+			<div class="navbar desktop-only">
 				<a href="">Főoldal</a>
 				<a href="">Technológia</a>
 				<a href="">Tudástár</a>
@@ -25,7 +26,7 @@
 				<a href="">GY.I.K.</a>
 				<a href="">Kapcsolat</a>
 			</div>
-			<div class="buttons">
+			<div class="buttons desktop-only">
 				<a href="" class="btn btn-transparent">
 					<div class="btn-text img-left">
 						<img src="./assets/img/ruler.svg" alt="">
@@ -38,8 +39,22 @@
 						Beszéljünk</div>
 				</a>
 			</div>
+			<button class="hamburger hamburger--squeeze mobile-only" type="button">
+				<span class="hamburger-box">
+					<span class="hamburger-inner"></span>
+				</span>
+			</button>
 		</header>
+		<div class="mobile-navbar mobile-only">
+			<a href="">Főoldal</a>
+			<a href="">Technológia</a>
+			<a href="">Tudástár</a>
+			<a href="">Rólunk</a>
+			<a href="">GY.I.K.</a>
+			<a href="">Kapcsolat</a>
+		</div>
 		<main>
+		<!-- HEADER -->
 			
 			<section class="container-fluid section-hero bg--white">
 				<div class="grid grid-2">
@@ -309,6 +324,7 @@
 				</div>
 			</section>
 
+		<!-- FOOTER -->
 		</main>
 		<footer class="bg--green">
 
@@ -319,19 +335,19 @@
 						<p class="lead">Innováció a hőszigetelésben</p>
 						<p>Új generációs, környezetkímélő hőszigetelés télen-nyáron</p>
 					</div>
-					<ul>Navigáció
+					<ul><div class="lead">Navigáció</div>
+						<li><a href="">Főoldal</a></li>
+						<li><a href="">link</a></li>
+						<li><a href="">link</a></li>
+						<li><a href="">link</a></li>
+					</ul>
+					<ul><div class="lead">Tudástár</div>
 						<li><a href="">link</a></li>
 						<li><a href="">link</a></li>
 						<li><a href="">link</a></li>
 						<li><a href="">link</a></li>
 					</ul>
-					<ul>Tudástár
-						<li><a href="">link</a></li>
-						<li><a href="">link</a></li>
-						<li><a href="">link</a></li>
-						<li><a href="">link</a></li>
-					</ul>
-					<ul>Elérhetőségünk
+					<ul><div class="lead">Elérhetőségünk</div>
 						<li><a href=""><img src="./assets/img/map-marker-.png" alt=""> link</a></li>
 						<li><a href=""><img src="./assets/img/phone.svg" alt=""> link</a></li>
 						<li><a href=""><img src="./assets/img/envelope.svg" alt=""> link</a></li>
