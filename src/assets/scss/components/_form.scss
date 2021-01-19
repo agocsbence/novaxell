@@ -1,5 +1,8 @@
 form {
     grid-gap: 1rem !important;
+    @media screen and (max-width: $tablet) {
+        display: block !important;
+    }
     input, textarea {
         border: 1px solid $border-color;
         border-radius: 12px;
@@ -10,5 +13,10 @@ form {
         justify-self: stretch;
         &.field-long {grid-column-end: span 2;}
         label, input, textarea {width: 100%;}
+    }
+    .btn-green {
+        @media screen and (max-width: $tablet) {
+            width: 94% !important;
+        }
     }
 }
