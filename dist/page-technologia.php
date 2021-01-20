@@ -34,7 +34,7 @@ get_header();
             <p>A hagyományos cellulóz hőszigetelésekre jellemző kiváló tulajdonságok mellett a NovaXell hőszigetelés fokozottan nagy hőtároló képességgel bír, mivel különleges, fázisváltó anyagot is tartalmaz.</p>
         </div>
     </div>
-    <p class="v-margin-1">A fázisváltó anyagnak köszönhetően jelentős hőtároló képességgel rendelkezik, ezért – más hőszigetelésekkel ellentétben – a NovaXell képes hatékonyan meggátolni a nyári túlmelegedést. Akár 30%-kal csökkenti a klimatizálási költségeket, valamint folyamatosan kiváló komfortkörülményeket biztosít.</p>
+    <p>A fázisváltó anyagnak köszönhetően jelentős hőtároló képességgel rendelkezik, ezért – más hőszigetelésekkel ellentétben – a NovaXell képes hatékonyan meggátolni a nyári túlmelegedést. Akár 30%-kal csökkenti a klimatizálási költségeket, valamint folyamatosan kiváló komfortkörülményeket biztosít.</p>
 </section>
 
 <section class="container bg--pureWhite section-tech-icon-cards">
