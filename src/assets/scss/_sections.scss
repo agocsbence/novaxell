@@ -9,6 +9,14 @@
         }
     }
 }
+.section-properties-grid {
+    grid-template-areas: "image-block text-block";
+    @media screen and (max-width: $mobile) {
+        grid-template-areas:
+            "image-block"
+            "text-block";
+    }
+}
 .section-icons {
     padding: 5rem 0;
     @media screen and (max-width: $mobile) {
@@ -24,8 +32,6 @@
             }
         }
     }
-    .image-block {grid-area: text-block;}
-    .text-block {grid-area: image-block;}
 }
 .section-faq {
     padding-top: 0;

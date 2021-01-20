@@ -40,8 +40,8 @@ get_header();
 	</div>
 </section>
 
-<section class="container bg--pureWhite section-properties">
-	<div class="grid grid-2">
+<section class="container bg--pureWhite">
+	<div class="grid grid-2 section-properties-grid">
 		
 		<?php
 		$properties = get_field('tulajdonsagok_blokk');
