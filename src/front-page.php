@@ -12,26 +12,26 @@ get_header();
 <section class="container-fluid section-hero bg--white">
 	<div class="grid grid-2">
 		<div class="first-block text-block">
-			<h2 class="lead"><span>\</span> Hőszigetelés újragondolva</h2>
-			<h1>NovaXell - Innováció a hőszigetelésben</h1>
-			<p>A lakó- és irodaépületek hőszigetelésénél kompromisszumokra volt szükség. Idáig. Cellulóz alapanyagú innovációnknak köszönhetően mostantól Te is kipróbálhatod azt a hatékony és környezettudatos megoldást, amely a könnyűszerkezetes épületek társává válik. Télen és nyáron egyaránt.</p>
+			<h2 class="lead"><span>\</span> <?php the_field('hero_alcim') ?></h2>
+			<h1><?php the_field('hero_cim') ?></h1>
+			<p><?php the_field('hero_szoveg') ?></p>
 			<div class="buttons">
 				<a href="#" class="btn btn-green">
 					<div class="btn-text img-right">
 						Beszéljünk
-						<img src="./assets/img/headset.svg" alt="">
+						<img src="<?php bloginfo('template_url') ?>/assets/img/headset.svg" alt="">
 					</div>
 				</a>
 				<a href="" class="btn btn-transparent">
 					<div class="btn-text img-right">
 						Több információt szeretnék
-						<img src="./assets/img/mouse.svg" alt="">
+						<img src="<?php bloginfo('template_url') ?>/assets/img/mouse.svg" alt="">
 					</div>
 				</a>
 			</div>
 		</div>
 		<div class="last-block image-block">
-			<img src="./assets/img/blocks/hero.png" alt="">
+			<img src="<?php the_field('hero_kep') ?>" alt="">
 		</div>
 	</div>
 </section>
@@ -39,7 +39,7 @@ get_header();
 <section class="container bg--pureWhite">
 	<div class="grid grid-2">
 		<div class="first-block image-block">
-			<img src="./assets/img/blocks/livingroom.png" alt="">
+			<img src="<?php bloginfo('template_url') ?>/assets/img/blocks/livingroom.png" alt="">
 		</div>
 		<div class="last-block text-block">
 			<h2 class="lead"><span>\</span> Jövő a jelenben</h2>
@@ -52,46 +52,46 @@ get_header();
 		<div class="first-block text-block">
 			
 			<div class="icon-block">
-				<div class="icon"><img src="./assets/img/icon/fire.png" alt=""></div>
+				<div class="icon"><img src="<?php bloginfo('template_url') ?>/assets/img/icon/fire.png" alt=""></div>
 				<div class="title">Maximális tűzállóság</div>
 				<p>A cellulóz hőszigetelésünkben található önkioldó hatású bórax miatt a tűzzel szembeni védelem garantált.</p>
 				<a href="" class="btn btn-plain">
 					<div class="btn-text img-right">
 						Tovább
-						<img src="./assets/img/green-long-arrow-right.png" alt="">
+						<img src="<?php bloginfo('template_url') ?>/assets/img/green-long-arrow-right.png" alt="">
 					</div>
 				</a>
 			</div>
 			<div class="icon-block">
-				<div class="icon"><img src="./assets/img/icon/money.png" alt=""></div>
+				<div class="icon"><img src="<?php bloginfo('template_url') ?>/assets/img/icon/money.png" alt=""></div>
 				<div class="title">Pénztárcakímélő megoldás</div>
 				<p>A költség- és időhatékony szállítás, valamint kivitelezhetőség miatt a NovaXell igazán kedvező árú beruházás.</p>
 				<a href="" class="btn btn-plain">
 					<div class="btn-text img-right">
 						Tovább
-						<img src="./assets/img/green-long-arrow-right.png" alt="">
+						<img src="<?php bloginfo('template_url') ?>/assets/img/green-long-arrow-right.png" alt="">
 					</div>
 				</a>
 			</div>
 			<div class="icon-block">
-				<div class="icon"><img src="./assets/img/icon/leaf.png" alt=""></div>
+				<div class="icon"><img src="<?php bloginfo('template_url') ?>/assets/img/icon/leaf.png" alt=""></div>
 				<div class="title">Csak (öko)tudatosan!</div>
 				<p>Ha az alapanyagot, vagy a kapcsolódó munkavégzést nézzük, ez a cellulóz hőszigetelő anyag kiemelkedően környezetkímélő.</p>
 				<a href="" class="btn btn-plain">
 					<div class="btn-text img-right">
 						Tovább
-						<img src="./assets/img/green-long-arrow-right.png" alt="">
+						<img src="<?php bloginfo('template_url') ?>/assets/img/green-long-arrow-right.png" alt="">
 					</div>
 				</a>
 			</div>
 			<div class="icon-block">
-				<div class="icon"><img src="./assets/img/icon/house.png" alt=""></div>
+				<div class="icon"><img src="<?php bloginfo('template_url') ?>/assets/img/icon/house.png" alt=""></div>
 				<div class="title">Télen-nyáron hatékony</div>
 				<p>Hőcsillapítás és hővédelem együtt? A NovaXell akár 30%-kal képes csökkenteni a klimatizálási költségeket, télen és nyáron.</p>
 				<a href="" class="btn btn-plain">
 					<div class="btn-text img-right">
 						Tovább
-						<img src="./assets/img/green-long-arrow-right.png" alt="">
+						<img src="<?php bloginfo('template_url') ?>/assets/img/green-long-arrow-right.png" alt="">
 					</div>
 				</a>
 			</div>
@@ -99,13 +99,13 @@ get_header();
 			<div class="btn btn-green">
 				<div class="btn-text img-right">
 					Beszéljünk
-					<img src="./assets/img/headset.svg" alt="">
+					<img src="<?php bloginfo('template_url') ?>/assets/img/headset.svg" alt="">
 				</div>
 			</div>
 
 		</div>
 		<div class="last-block image-block">
-			<img src="./assets/img/blocks/staircase.png" alt="">
+			<img src="<?php bloginfo('template_url') ?>/assets/img/blocks/staircase.png" alt="">
 		</div>
 	</div>
 </section>
@@ -131,7 +131,7 @@ get_header();
 		<a href="" class="btn btn-green">
 			<div class="btn-text img-right">
 				Tovább a tudástárra
-				<img src="./assets/img/long-arrow-right.svg" alt="">
+				<img src="<?php bloginfo('template_url') ?>/assets/img/long-arrow-right.svg" alt="">
 			</div>
 		</a>
 	</div>
@@ -210,14 +210,14 @@ get_header();
 						<label for="submitBtn" class="btn btn-green">
 							<div class="btn-text img-right">
 								Küldés
-								<img src="./assets/img/paper-plane.svg" alt="">
+								<img src="<?php bloginfo('template_url') ?>/assets/img/paper-plane.svg" alt="">
 							</div>
 						</label>
 					</div>
 				</form>
 			</div>
 			<div class="contact-image last-block image-block">
-				<img src="./assets/img/blocks/contact.png" alt="">
+				<img src="<?php bloginfo('template_url') ?>/assets/img/blocks/contact.png" alt="">
 			</div>
 		</div>
 	</div>
