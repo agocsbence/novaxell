@@ -24,6 +24,14 @@ section {
                 "text-block";
             grid-template-columns: 1fr;
         }
+        &.grid-reverse {
+            grid-template-areas: "image-block text-block ";
+            @media screen and (max-width: $mobile) {
+                grid-template-areas:
+                    "image-block"
+                    "text-block";
+            }
+        }
         .text-block {
             grid-area: text-block;
             &.first-block {

@@ -24,7 +24,7 @@ get_header();
 </section>
 
 <section class="container bg--pureWhite">
-    <div class="grid grid-2">
+    <div class="grid grid-2 grid-reverse">
         <div class="first-block image-block">
             <img src="<?php bloginfo('template_url') ?>/assets/img/blocks/tech-chair.png" alt="">
         </div>
@@ -34,7 +34,7 @@ get_header();
             <p>A hagyományos cellulóz hőszigetelésekre jellemző kiváló tulajdonságok mellett a NovaXell hőszigetelés fokozottan nagy hőtároló képességgel bír, mivel különleges, fázisváltó anyagot is tartalmaz.</p>
         </div>
     </div>
-    <p>A fázisváltó anyagnak köszönhetően jelentős hőtároló képességgel rendelkezik, ezért – más hőszigetelésekkel ellentétben – a NovaXell képes hatékonyan meggátolni a nyári túlmelegedést. Akár 30%-kal csökkenti a klimatizálási költségeket, valamint folyamatosan kiváló komfortkörülményeket biztosít.</p>
+    <p class="v-margin-1">A fázisváltó anyagnak köszönhetően jelentős hőtároló képességgel rendelkezik, ezért – más hőszigetelésekkel ellentétben – a NovaXell képes hatékonyan meggátolni a nyári túlmelegedést. Akár 30%-kal csökkenti a klimatizálási költségeket, valamint folyamatosan kiváló komfortkörülményeket biztosít.</p>
 </section>
 
 <section class="container bg--pureWhite section-tech-icon-cards">

@@ -8,13 +8,13 @@
         <div class="btn btn-blue">
             <div class="btn-text img-right">
                 9 Perc
-                <img src="./assets/img/clock.svg" alt="">
+                <img src="<?php bloginfo('template_url') ?>/assets/img/clock.svg" alt="">
             </div>
         </div>
         <a href="<?php echo get_permalink(); ?>" class="btn btn-plain">
             <div class="btn-text img-right">
                 Elolvasom
-                <img src="./assets/img/green-long-arrow-right.png" alt="">
+                <img src="<?php bloginfo('template_url') ?>/assets/img/green-long-arrow-right.png" alt="">
             </div>
         </a>
     </div>
