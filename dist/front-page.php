@@ -13,12 +13,11 @@ get_header();
 	<div class="grid grid-2">
 		<?php
 		$hero = get_field('hero_blokk');
-		var_dump($hero["hero_alcim"]);
 		if( $hero ): ?>
 			<div class="first-block text-block">
-				<h2 class="lead"><span>\</span> <?php the_sub_field('hero_alcim') ?></h2>
-				<h1><?php the_sub_field('hero_cim') ?></h1>
-				<p><?php the_sub_field('hero_szoveg') ?></p>
+				<h2 class="lead"><span>\</span> <?php echo $hero["hero_alcim"] ?></h2>
+				<h1><?php echo $hero["hero_cim"] ?></h1>
+				<p><?php echo $hero["hero_szoveg"] ?></p>
 				<div class="buttons">
 					<a href="#" class="btn btn-green">
 						<div class="btn-text img-right">
@@ -35,7 +34,7 @@ get_header();
 				</div>
 			</div>
 			<div class="last-block image-block">
-				<img src="<?php the_sub_field('hero_kep') ?>" alt="">
+				<img src="<?php echo $hero["hero_kep"] ?>" alt="">
 			</div>
 		<?php endif; ?>
 	</div>
