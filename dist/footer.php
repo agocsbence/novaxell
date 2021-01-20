@@ -4,7 +4,7 @@
 			<div class="container">
 				<div class="footer-content grid grid-5">
 					<div class="footer-logo">
-						<img src="./assets/img/footer-logo.svg" alt="">
+						<img src="<?php bloginfo('template_url') ?>/assets/img/footer-logo.svg" alt="">
 						<p class="lead">Innováció a hőszigetelésben</p>
 						<p>Új generációs, környezetkímélő hőszigetelés télen-nyáron</p>
 					</div>
@@ -22,9 +22,9 @@
 						<li><a href="">link</a></li>
 					</ul>
 					<ul id="footer-menu-contact"><div class="lead">Elérhetőségünk</div>
-						<li><a href=""><img src="./assets/img/map-marker-.png" alt=""> Budapest</a></li>
-						<li><a href=""><img src="./assets/img/phone.svg" alt=""> +36 30 123 4567</a></li>
-						<li><a href=""><img src="./assets/img/envelope.svg" alt=""> novaxell@novaxell.hu</a></li>
+						<li><a href=""><img src="<?php bloginfo('template_url') ?>/assets/img/map-marker-.png" alt=""> Budapest</a></li>
+						<li><a href=""><img src="<?php bloginfo('template_url') ?>/assets/img/phone.svg" alt=""> +36 30 123 4567</a></li>
+						<li><a href=""><img src="<?php bloginfo('template_url') ?>/assets/img/envelope.svg" alt=""> novaxell@novaxell.hu</a></li>
 					</ul>
 				</div>
 				<div class="copyright">
@@ -33,7 +33,7 @@
 			</div>
 			
 		</footer>
-		<script src="./assets/js/scripts.js" type="text/javascript"></script>
+		<script src="<?php bloginfo('template_url') ?>/assets/js/scripts.js" type="text/javascript"></script>
 		<?php wp_footer(); ?>
 	</body>
 </html>

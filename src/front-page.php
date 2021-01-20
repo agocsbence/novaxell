@@ -168,20 +168,19 @@ get_header();
 			<h1><?php echo $faq["blokk_cim"] ?></h1>
 			<p class="subtitle"><?php echo $faq["blokk_leiras"] ?></p>
 		</div>
-		<div class="container accordions-wrapper">
-			<?php if( have_rows('gyik') ): ?>
-				<?php echo 'hello' ?>
-				<?php while( have_rows('gyik') ): the_row();  ?>
-					<div class="accordion-wrapper">
-						<div class="accordion"><?php the_sub_field('kerdes') ?></div>
-						<div class="panel">
-							<p><?php the_sub_field('valasz') ?></p>
-						</div>
-					</div>
-				<?php endwhile; ?>
-			<?php endif; ?>
-		</div>
 	<?php endif; ?>
+	<div class="container accordions-wrapper">
+		<?php if( have_rows('gyik') ): ?>
+			<?php while( have_rows('gyik') ): the_row();  ?>
+				<div class="accordion-wrapper">
+					<div class="accordion"><?php the_sub_field('kerdes') ?></div>
+					<div class="panel">
+						<p><?php the_sub_field('valasz') ?></p>
+					</div>
+				</div>
+			<?php endwhile; ?>
+		<?php endif; ?>
+	</div>
 </section>
 
 <section class="section-contact bg--pureWhite">
