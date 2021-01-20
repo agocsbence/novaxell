@@ -13,7 +13,7 @@ get_header();
 	<div class="grid grid-2">
 		<?php
 		$hero = get_field('hero_blokk');
-		var_dump($hero['hero_alcim']);
+		var_dump($hero["hero_alcim"]);
 		if( $hero ): ?>
 			<div class="first-block text-block">
 				<h2 class="lead"><span>\</span> <?php the_sub_field('hero_alcim') ?></h2>
