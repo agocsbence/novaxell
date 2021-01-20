@@ -16,7 +16,7 @@ get_header();
 		var_dump($hero);
 		if( $hero ): ?>
 			<div class="first-block text-block">
-				<h2 class="lead"><span>\</span> <?php the_field('hero_alcim') ?></h2>
+				<h2 class="lead"><span>\</span> <?php $hero['hero_alcim'] ?></h2>
 				<h1><?php the_field('hero_cim') ?></h1>
 				<p><?php the_field('hero_szoveg') ?></p>
 				<div class="buttons">
