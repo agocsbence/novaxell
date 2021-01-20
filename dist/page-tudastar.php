@@ -46,90 +46,15 @@ get_header();
             <p class="subtitle">Minden, amit a praktikus, megtérülő és környezetkímélő hőszigetelésekről tudni érdemes.</p>
         </div>
         <div class="grid grid-3 container">
-            <div class="card">
-                <img src="<?php bloginfo('template_url') ?>/assets/img/blocks/card.jpg" alt="" class="card-image">
-                <div class="card-text">
-                    <h3 class="title card-title">Cellulóz szigetelés befúvó gép, a XXI. század csodája</h3>
-                    <p class="card-description">A szigetelés csak az egyenlet egyik fele. A technológia pedig a másik. A befúvásos technológia lelke és cikkünk hőse maga a gép. Ismerd meg, mire képes pontosan!</p>
-                </div>
-                <div class="card-buttons">
-                    <div class="btn btn-blue">
-                        <div class="btn-text img-right">
-                            9 Perc
-                            <img src="<?php bloginfo('template_url') ?>/assets/img/clock.svg" alt="">
-                        </div>
-                    </div>
-                    <a href="" class="btn btn-plain">
-                        <div class="btn-text img-right">
-                            Elolvasom
-                            <img src="<?php bloginfo('template_url') ?>/assets/img/green-long-arrow-right.png" alt="">
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="card">
-                <img src="<?php bloginfo('template_url') ?>/assets/img/blocks/card-2.png" alt="" class="card-image">
-                <div class="card-text">
-                    <h3 class="title card-title">Isocell szigetelés, a könnyű eladhatóság titka?</h3>
-                    <p class="card-description">Minden sikeres vállalkozó figyeli a trendeket. Hatékonyság, ár, ökotudatosság? Mutatjuk, mi az, ami igazán számít a lakás- és irodavásárlóknak, és hogy hogyan jön ehhez az egészhez az isocell szigetelés.</p>
-                </div>
-                <div class="card-buttons">
-                    <div class="btn btn-blue">
-                        <div class="btn-text img-right">
-                            9 Perc
-                            <img src="<?php bloginfo('template_url') ?>/assets/img/clock.svg" alt="">
-                        </div>
-                    </div>
-                    <a href="" class="btn btn-plain">
-                        <div class="btn-text img-right">
-                            Elolvasom
-                            <img src="<?php bloginfo('template_url') ?>/assets/img/green-long-arrow-right.png" alt="">
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="card">
-                <img src="<?php bloginfo('template_url') ?>/assets/img/blocks/card-3.png" alt="" class="card-image">
-                <div class="card-text">
-                    <h3 class="title card-title">A fújt cellulóz szigetelés a munkások kedvence</h3>
-                    <p class="card-description">Tévedés, hogy az építőipari munkások ne szeretnének dolgozni. Csak kevés olyan megoldással találkoznak, ami minimális szennyezéssel és hulladékkal jár. Utánajártunk, pontosan mekkora terhet vesz le egy kivitelezői csapat válláról a fújt cellulóz szigetelés. Érdekel?</p>
-                </div>
-                <div class="card-buttons">
-                    <div class="btn btn-blue">
-                        <div class="btn-text img-right">
-                            9 Perc
-                            <img src="<?php bloginfo('template_url') ?>/assets/img/clock.svg" alt="">
-                        </div>
-                    </div>
-                    <a href="" class="btn btn-plain">
-                        <div class="btn-text img-right">
-                            Elolvasom
-                            <img src="<?php bloginfo('template_url') ?>/assets/img/green-long-arrow-right.png" alt="">
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="card">
-                <img src="<?php bloginfo('template_url') ?>/assets/img/article/article-2.png" alt="" class="card-image">
-                <div class="card-text">
-                    <h3 class="title card-title">Tervezésre született: a cellulóz hőszigetelés 7 titka</h3>
-                    <p class="card-description">Ismerd meg a cellulóz hőszigetelés 7 rendhagyó tulajdonságát, ami miatt 10 tervezőből 9 „erre épít”.</p>
-                </div>
-                <div class="card-buttons">
-                    <div class="btn btn-blue">
-                        <div class="btn-text img-right">
-                            9 Perc
-                            <img src="<?php bloginfo('template_url') ?>/assets/img/clock.svg" alt="">
-                        </div>
-                    </div>
-                    <a href="" class="btn btn-plain">
-                        <div class="btn-text img-right">
-                            Elolvasom
-                            <img src="<?php bloginfo('template_url') ?>/assets/img/green-long-arrow-right.png" alt="">
-                        </div>
-                    </a>
-                </div>
-            </div>
+            <?php
+                $loop = new WP_Query( array( 'post_type' => 'post', 'posts_per_page' => 3 ) );
+                
+                while ( $loop->have_posts() ) : $loop->the_post(); 
+                
+                    include get_theme_file_path( '/includes/card.php' );
+                
+                endwhile; wp_reset_query();
+            ?>
         </div>
     </div>
 </section>
