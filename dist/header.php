@@ -17,14 +17,14 @@
 	</head>
 	<body class="body">
 		<header>
-			<a href="#" class="logo"><img src="<?php bloginfo('template_url') ?>/assets/img/header_logo.svg" alt=""></a>
+			<a href="<?php echo esc_url( get_page_link( 23 ) ); ?>" class="logo"><img src="<?php bloginfo('template_url') ?>/assets/img/header_logo.svg" alt=""></a>
 			<div class="navbar desktop-only">
-				<a href="">Főoldal</a>
-				<a href="">Technológia</a>
-				<a href="">Tudástár</a>
-				<a href="">Rólunk</a>
-				<a href="">GY.I.K.</a>
-				<a href="">Kapcsolat</a>
+				<a href="<?php echo esc_url( get_page_link( 23 ) ); ?>">Főoldal</a>
+				<a href="<?php echo esc_url( get_page_link( 25 ) ); ?>">Technológia</a>
+				<a href="<?php echo esc_url( get_page_link( 27 ) ); ?>">Tudástár</a>
+				<a href="<?php echo esc_url( get_page_link( 21 ) ); ?>">Rólunk</a>
+				<a href="<?php echo esc_url( get_page_link( 23 ) ); ?>">GY.I.K.</a>
+				<a href="<?php echo esc_url( get_page_link( 23 ) ); ?>">Kapcsolat</a>
 			</div>
 			<div class="buttons desktop-only">
 				<a href="" class="btn btn-transparent">
@@ -46,12 +46,12 @@
 			</button>
 		</header>
 		<div class="mobile-navbar">
-			<a href="">Főoldal</a>
-			<a href="">Technológia</a>
-			<a href="">Tudástár</a>
-			<a href="">Rólunk</a>
-			<a href="">GY.I.K.</a>
-			<a href="">Kapcsolat</a>
+			<a href="<?php echo esc_url( get_page_link( 23 ) ); ?>">Főoldal</a>
+			<a href="<?php echo esc_url( get_page_link( 25 ) ); ?>">Technológia</a>
+			<a href="<?php echo esc_url( get_page_link( 27 ) ); ?>">Tudástár</a>
+			<a href="<?php echo esc_url( get_page_link( 21 ) ); ?>">Rólunk</a>
+			<a href="<?php echo esc_url( get_page_link( 23 ) ); ?>">GY.I.K.</a>
+			<a href="<?php echo esc_url( get_page_link( 23 ) ); ?>">Kapcsolat</a>
 			<div class="buttons">
 				<a href="" class="btn btn-transparent">
 					<div class="btn-text img-left">

@@ -9,17 +9,16 @@
 						<p>Új generációs, környezetkímélő hőszigetelés télen-nyáron</p>
 					</div>
 					<ul id="footer-menu-nav"><div class="lead">Navigáció</div>
-						<li><a href="">Főoldal</a></li>
-						<li><a href="">Technológia</a></li>
+						<li><a href="<?php echo esc_url( get_page_link( 23 ) ); ?>">Főoldal</a></li>
+						<li><a href="<?php echo esc_url( get_page_link( 25 ) ); ?>">Technológia</a></li>
 						<li><a href="">Referenciák</a></li>
-						<li><a href="">Rólunk</a></li>
-						<li><a href="">Gy.I.K</a></li>
+						<li><a href="<?php echo esc_url( get_page_link( 21 ) ); ?>">Rólunk</a></li>
 					</ul>
 					<ul id="footer-menu-knowledge" class="desktop-only"><div class="lead">Tudástár</div>
-						<li><a href="">link</a></li>
-						<li><a href="">link</a></li>
-						<li><a href="">link</a></li>
-						<li><a href="">link</a></li>
+						<li><a href="<?php echo esc_url( get_page_link( 27 ) ); ?>">Tervezőknek</a></li>
+						<li><a href="<?php echo esc_url( get_page_link( 27 ) ); ?>">Kivitelezőknek</a></li>
+						<li><a href="<?php echo esc_url( get_page_link( 27 ) ); ?>">Építtetőknek</a></li>
+						<li><a href="<?php echo esc_url( get_page_link( 23 ) ); ?>">GyIK</a></li>
 					</ul>
 					<ul id="footer-menu-contact"><div class="lead">Elérhetőségünk</div>
 						<li><a href=""><img src="<?php bloginfo('template_url') ?>/assets/img/map-marker-.png" alt=""> Budapest</a></li>
