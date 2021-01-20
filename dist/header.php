@@ -8,7 +8,7 @@
 		<link rel="preconnect" href="https://fonts.gstatic.com">
 		<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="<?php bloginfo('template_url') ?>/assets/css/hamburger.css">
-        <link rel="stylesheet" href="<?php bloginfo('template_url') ?>/assets/css/style.css" type="text/css" />
+        <link rel="stylesheet" href="<?php bloginfo('template_url') ?>/assets/css/style.css?v=1.0.0" type="text/css" />
 		<!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" type="text/javascript"></script><![endif]-->
 		
 		<link href="favicon.png" rel="shortcut icon" type="image/x-icon"/>
