@@ -1,8 +1,7 @@
 <?php get_header(); the_post(); ?>
 
-<main class="grid grid-2-1 container single-post-content">
-	<div id="post-content">
-		<div class="grid grid-1">
+	<div class="container">
+		<div class="">
 
 			<?php if ( have_posts() ) : ?>
 
@@ -10,9 +9,7 @@
 				<?php the_archive_title( '<h1 class="page-title">', '</h1>' ); ?>
 			</div>
 
-			<?php while ( have_posts() ) : the_post();
-
-				echo 'Szerző leírása'; ?>
+			<?php while ( have_posts() ) : the_post(); ?>
 				
 				<div class="article-content">
 					<?php the_content();?> 
@@ -29,7 +26,6 @@
         
 		</div>
 	</div>
-	<?php get_sidebar(); ?>
 </main>
 
 <?php get_footer();
