@@ -169,8 +169,8 @@ get_header();
 			<p class="subtitle"><?php echo $faq["blokk_leiras"] ?></p>
 		</div>
 		<div class="container accordions-wrapper">
-			<?php echo 'hello' ?>
 			<?php if( have_rows('gyik') ): ?>
+				<?php echo 'hello' ?>
 				<?php while( have_rows('gyik') ): the_row();  ?>
 					<div class="accordion-wrapper">
 						<div class="accordion"><?php the_sub_field('kerdes') ?></div>
