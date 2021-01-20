@@ -11,7 +11,7 @@ get_header();
 			
 <section class="bg--pureWhite section-knowledge-hero">
     <div class="container">
-        <div class="grid grid-2">
+        <div class="grid grid-2 grid-reverse">
             <div class="first-block image-block">
                 <img src="<?php bloginfo('template_url') ?>/assets/img/article/article-1.png" alt="">
             </div>
