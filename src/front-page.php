@@ -40,7 +40,7 @@ get_header();
 	</div>
 </section>
 
-<section class="container bg--pureWhite">
+<section class="container bg--pureWhite section-properties">
 	<div class="grid grid-2">
 		
 		<?php
@@ -55,7 +55,7 @@ get_header();
 				<?php echo $properties["tulajdonsagok_szoveg"] ?>
 			</div>
 		<?php endif; ?>
-		
+
 	</div>
 	<div class="grid grid-2 section section-icons">
 		<div class="first-block text-block">
