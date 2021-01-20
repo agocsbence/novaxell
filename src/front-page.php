@@ -109,12 +109,12 @@ get_header();
 					</a>
 				</div>
 
-				<div class="btn btn-green">
+				<a href="" class="btn btn-green">
 					<div class="btn-text img-right">
 						Beszéljünk
 						<img src="<?php bloginfo('template_url') ?>/assets/img/headset.svg" alt="">
 					</div>
-				</div>
+				</a>
 
 			</div>
 			<div class="last-block image-block">
@@ -128,9 +128,15 @@ get_header();
 
 <section class="bg--white section-knowledge">
 	<div class="text-center container">
-		<h2 class="lead"><span>\</span> NovaXell Tudástár</h2>
-		<h1>Minőségi cikkek, minőségi anyagok</h1>
-		<p class="subtitle">Minden, amit a praktikus, megtérülő és környezetkímélő hőszigetelésekről tudni érdemes.</p>
+
+		<?php
+		$knowledge = get_field('tulajdonsagok_blokk');
+		if( $knowledge ): ?>
+			<h2 class="lead"><span>\</span> <?php echo $knowledge["blokk_alcim"] ?></h2>
+			<h1><?php echo $knowledge["blokk_cim"] ?></h1>
+			<p class="subtitle"><?php echo $knowledge["blokk_leiras"] ?></p>
+		<?php endif; ?>
+
 	</div>
 	<div class="grid grid-3 container">
 		<?php
@@ -160,36 +166,16 @@ get_header();
 		<p class="subtitle">Tudj meg mindent, mielőtt meghozod a jó döntést! A kérdésekből és válaszokból kiderül, miért a NovaXell a legjobb dolog, ami fázisváltó anyaggal csak történhet</p>
 	</div>
 	<div class="container accordions-wrapper">
-		<div class="accordion-wrapper">
-			<div class="accordion">Section 1</div>
-			<div class="panel">
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium cumque repudiandae omnis facere maiores. Ipsa voluptatibus eaque eum facere perspiciatis, corrupti blanditiis totam odio repellendus perferendis. Vero, quidem autem. Modi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium cumque repudiandae omnis facere maiores. Ipsa voluptatibus eaque eum facere perspiciatis, corrupti blanditiis totam odio repellendus perferendis. Vero, quidem autem. Modi.</p>
-			</div>
-		</div>
-		<div class="accordion-wrapper">
-			<div class="accordion">Section 2</div>
-			<div class="panel">
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium cumque repudiandae omnis facere maiores. Ipsa voluptatibus eaque eum facere perspiciatis, corrupti blanditiis totam odio repellendus perferendis. Vero, quidem autem. Modi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium cumque repudiandae omnis facere maiores. Ipsa voluptatibus eaque eum facere perspiciatis, corrupti blanditiis totam odio repellendus perferendis. Vero, quidem autem. Modi.</p>
-			</div>
-		</div>
-		<div class="accordion-wrapper">
-			<div class="accordion">Section 3</div>
-			<div class="panel">
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium cumque repudiandae omnis facere maiores. Ipsa voluptatibus eaque eum facere perspiciatis, corrupti blanditiis totam odio repellendus perferendis. Vero, quidem autem. Modi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium cumque repudiandae omnis facere maiores. Ipsa voluptatibus eaque eum facere perspiciatis, corrupti blanditiis totam odio repellendus perferendis. Vero, quidem autem. Modi.</p>
-			</div>
-		</div>
-		<div class="accordion-wrapper">
-			<div class="accordion">Section 4</div>
-			<div class="panel">
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium cumque repudiandae omnis facere maiores. Ipsa voluptatibus eaque eum facere perspiciatis, corrupti blanditiis totam odio repellendus perferendis. Vero, quidem autem. Modi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium cumque repudiandae omnis facere maiores. Ipsa voluptatibus eaque eum facere perspiciatis, corrupti blanditiis totam odio repellendus perferendis. Vero, quidem autem. Modi.</p>
-			</div>
-		</div>
-		<div class="accordion-wrapper">
-			<div class="accordion">Section 5</div>
-			<div class="panel">
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium cumque repudiandae omnis facere maiores. Ipsa voluptatibus eaque eum facere perspiciatis, corrupti blanditiis totam odio repellendus perferendis. Vero, quidem autem. Modi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium cumque repudiandae omnis facere maiores. Ipsa voluptatibus eaque eum facere perspiciatis, corrupti blanditiis totam odio repellendus perferendis. Vero, quidem autem. Modi.</p>
-			</div>
-		</div>
+		<?php if( have_rows('gyik') ): ?>
+			<?php while( have_rows('gyik') ): the_row();  ?>
+				<div class="accordion-wrapper">
+					<div class="accordion"><?php the_sub_field('kerdes') ?></div>
+					<div class="panel">
+						<p><?php the_sub_field('valasz') ?></p>
+					</div>
+				</div>
+			<?php endwhile; ?>
+		<?php endif; ?>
 	</div>
 </section>
 

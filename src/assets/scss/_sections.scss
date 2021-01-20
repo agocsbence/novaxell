@@ -10,7 +10,7 @@
     }
 }
 .section-properties-grid {
-    grid-template-areas: "image-block text-block";
+    grid-template-areas: "image-block text-block" !important;
     @media screen and (max-width: $mobile) {
         grid-template-areas:
             "image-block"
