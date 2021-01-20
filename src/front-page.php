@@ -160,23 +160,27 @@ get_header();
 </section>
 
 <section class="section-faq bg--white">
-	<div class="text-center container">
-		<h2 class="lead"><span>\</span> Gyakori kérdések</h2>
-		<h1>Nálunk találkoznak a piaci és tervezői igények</h1>
-		<p class="subtitle">Tudj meg mindent, mielőtt meghozod a jó döntést! A kérdésekből és válaszokból kiderül, miért a NovaXell a legjobb dolog, ami fázisváltó anyaggal csak történhet</p>
-	</div>
-	<div class="container accordions-wrapper">
-		<?php if( have_rows('gyik') ): ?>
-			<?php while( have_rows('gyik') ): the_row();  ?>
-				<div class="accordion-wrapper">
-					<div class="accordion"><?php the_sub_field('kerdes') ?></div>
-					<div class="panel">
-						<p><?php the_sub_field('valasz') ?></p>
+	<?php
+	$faq = get_field('tulajdonsagok_blokk');
+	if( $faq ): ?>
+		<div class="text-center container">
+			<h2 class="lead"><span>\</span> <?php echo $faq["blokk_alcim"] ?></h2>
+			<h1><?php echo $faq["blokk_cim"] ?></h1>
+			<p class="subtitle"><?php echo $faq["blokk_leiras"] ?></p>
+		</div>
+		<div class="container accordions-wrapper">
+			<?php if( have_rows('gyik') ): ?>
+				<?php while( have_rows('gyik') ): the_row();  ?>
+					<div class="accordion-wrapper">
+						<div class="accordion"><?php the_sub_field('kerdes') ?></div>
+						<div class="panel">
+							<p><?php the_sub_field('valasz') ?></p>
+						</div>
 					</div>
-				</div>
-			<?php endwhile; ?>
-		<?php endif; ?>
-	</div>
+				<?php endwhile; ?>
+			<?php endif; ?>
+		</div>
+	<?php endif; ?>
 </section>
 
 <section class="section-contact bg--pureWhite">
