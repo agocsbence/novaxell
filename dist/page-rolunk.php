@@ -18,7 +18,7 @@ get_header();
             <p>Édesanyánk lakberendezői és Édesapánk építőmérnöki tudását is kamatoztatva alkottuk meg azt a dolgozatot, amelyből kinőtt a NovaXell hőszigetelés. Dr. Becker Gábor, a Budapesti Műszaki és Gazdaságtudományi Egyetem professzorának tanácsai és Imre bátyám tájépítész, építésvezetői kompetenciája segítségével sikerült a piac minden igényét figyelembe vennünk, amikor véglegesítettük a jövő hőszigetelő megoldását.</p>
         </div>
         <div class="last-block image-block">
-            <img src="./assets/img/blocks/about.png" alt="">
+            <img src="<?php bloginfo('template_url') ?>/assets/img/blocks/about.png" alt="">
         </div>
     </div>
 </section>
@@ -32,8 +32,8 @@ get_header();
     <div class="grid grid-2">
         <div class="image-card bordered">
             <div class="card-image">
-                <img class="member" src="./assets/img/team-1.png" alt="">
-                <img class="logo" src="./assets/img/logo-mini-white.png" alt="">
+                <img class="member" src="<?php bloginfo('template_url') ?>/assets/img/team-1.png" alt="">
+                <img class="logo" src="<?php bloginfo('template_url') ?>/assets/img/logo-mini-white.png" alt="">
             </div>
             <div class="card-content">
                 <h2 class="title">
@@ -47,8 +47,8 @@ get_header();
         </div>
         <div class="image-card bordered">
             <div class="card-image">
-                <img class="member" src="./assets/img/team-2.png" alt="">
-                <img class="logo" src="./assets/img/logo-mini.png" alt="">
+                <img class="member" src="<?php bloginfo('template_url') ?>/assets/img/team-2.png" alt="">
+                <img class="logo" src="<?php bloginfo('template_url') ?>/assets/img/logo-mini.png" alt="">
             </div>
             <div class="card-content">
                 <h2 class="title">
