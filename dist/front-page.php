@@ -42,15 +42,20 @@ get_header();
 
 <section class="container bg--pureWhite">
 	<div class="grid grid-2">
-		<div class="first-block image-block">
-			<img src="<?php bloginfo('template_url') ?>/assets/img/blocks/livingroom.png" alt="">
-		</div>
-		<div class="last-block text-block">
-			<h2 class="lead"><span>\</span> Jövő a jelenben</h2>
-			<h1>Környezetkímélő hőszigetelés, amelyre minden otthon vágyik</h1>
-			<p>Hogy mitől különleges a NovaXell? Az alapanyagtól és a technológiától.</p>
-			<p>A szabványosított feldolgozási folyamatokon átesett, darált újságpapírba fázisváltó anyagot (PCM) integrálunk, így a környezetterhelő hatás rendkívül alacsony. A befúvásos technológiának köszönhetően pedig gazdaságosan szállítható és egyszerűen, hulladékmentesen beépíthető.</p>
-		</div>
+		
+		<?php
+		$properties = get_field('tulajdonsagok_blokk');
+		if( $properties ): ?>
+			<div class="first-block image-block">
+				<img src="<?php echo $properties["tulajdonsagok_kep"] ?>" alt="">
+			</div>
+			<div class="last-block text-block">
+				<h2 class="lead"><span>\</span> <?php echo $properties["tulajdonsagok_alcim"] ?></h2>
+				<h1><?php echo $properties["tulajdonsagok_cim"] ?></h1>
+				<?php echo $properties["tulajdonsagok_szoveg"] ?>
+			</div>
+		<?php endif; ?>
+		
 	</div>
 	<div class="grid grid-2 section section-icons">
 		<div class="first-block text-block">
