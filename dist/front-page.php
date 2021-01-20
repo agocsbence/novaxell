@@ -161,7 +161,7 @@ get_header();
 
 <section class="section-faq bg--white">
 	<?php
-	$faq = get_field('tulajdonsagok_blokk');
+	$faq = get_field('gyik_blokk');
 	if( $faq ): ?>
 		<div class="text-center container">
 			<h2 class="lead"><span>\</span> <?php echo $faq["blokk_alcim"] ?></h2>
