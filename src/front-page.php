@@ -61,7 +61,7 @@ get_header();
 		<div class="first-block text-block">
 
 			<?php
-			$propertiesList = get_field('tulajdonsagok_lista_blokk');
+			$propertiesList = get_field('tulajdonsagok_lista');
 			if( $propertiesList ): ?>
 				
 				<div class="icon-block">
