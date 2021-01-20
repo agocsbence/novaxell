@@ -9,10 +9,6 @@
         }
     }
 }
-.section-properties {
-    .image-block {grid-area: text-block;}
-    .text-block {grid-area: image-block;}
-}
 .section-icons {
     padding: 5rem 0;
     @media screen and (max-width: $mobile) {
@@ -28,6 +24,8 @@
             }
         }
     }
+    .image-block {grid-area: text-block;}
+    .text-block {grid-area: image-block;}
 }
 .section-faq {
     padding-top: 0;
