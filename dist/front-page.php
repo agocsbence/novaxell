@@ -59,63 +59,70 @@ get_header();
 	</div>
 	<div class="grid grid-2 section section-icons">
 		<div class="first-block text-block">
-			
-			<div class="icon-block">
-				<div class="icon"><img src="<?php bloginfo('template_url') ?>/assets/img/icon/fire.png" alt=""></div>
-				<div class="title">Maximális tűzállóság</div>
-				<p>A cellulóz hőszigetelésünkben található önkioldó hatású bórax miatt a tűzzel szembeni védelem garantált.</p>
-				<a href="" class="btn btn-plain">
-					<div class="btn-text img-right">
-						Tovább
-						<img src="<?php bloginfo('template_url') ?>/assets/img/green-long-arrow-right.png" alt="">
-					</div>
-				</a>
-			</div>
-			<div class="icon-block">
-				<div class="icon"><img src="<?php bloginfo('template_url') ?>/assets/img/icon/money.png" alt=""></div>
-				<div class="title">Pénztárcakímélő megoldás</div>
-				<p>A költség- és időhatékony szállítás, valamint kivitelezhetőség miatt a NovaXell igazán kedvező árú beruházás.</p>
-				<a href="" class="btn btn-plain">
-					<div class="btn-text img-right">
-						Tovább
-						<img src="<?php bloginfo('template_url') ?>/assets/img/green-long-arrow-right.png" alt="">
-					</div>
-				</a>
-			</div>
-			<div class="icon-block">
-				<div class="icon"><img src="<?php bloginfo('template_url') ?>/assets/img/icon/leaf.png" alt=""></div>
-				<div class="title">Csak (öko)tudatosan!</div>
-				<p>Ha az alapanyagot, vagy a kapcsolódó munkavégzést nézzük, ez a cellulóz hőszigetelő anyag kiemelkedően környezetkímélő.</p>
-				<a href="" class="btn btn-plain">
-					<div class="btn-text img-right">
-						Tovább
-						<img src="<?php bloginfo('template_url') ?>/assets/img/green-long-arrow-right.png" alt="">
-					</div>
-				</a>
-			</div>
-			<div class="icon-block">
-				<div class="icon"><img src="<?php bloginfo('template_url') ?>/assets/img/icon/house.png" alt=""></div>
-				<div class="title">Télen-nyáron hatékony</div>
-				<p>Hőcsillapítás és hővédelem együtt? A NovaXell akár 30%-kal képes csökkenteni a klimatizálási költségeket, télen és nyáron.</p>
-				<a href="" class="btn btn-plain">
-					<div class="btn-text img-right">
-						Tovább
-						<img src="<?php bloginfo('template_url') ?>/assets/img/green-long-arrow-right.png" alt="">
-					</div>
-				</a>
-			</div>
 
-			<div class="btn btn-green">
-				<div class="btn-text img-right">
-					Beszéljünk
-					<img src="<?php bloginfo('template_url') ?>/assets/img/headset.svg" alt="">
+			<?php
+			$propertiesList = get_field('tulajdonsagok_lista_blokk');
+			if( $propertiesList ): ?>
+				
+				<div class="icon-block">
+					<div class="icon"><img src="<?php bloginfo('template_url') ?>/assets/img/icon/fire.png" alt=""></div>
+					<div class="title"><?php echo $propertiesList["tulajdonsag_1_cim"] ?></div>
+					<p><?php echo $propertiesList["tulajdonsag_1_szoveg"] ?></p>
+					<a href="" class="btn btn-plain">
+						<div class="btn-text img-right">
+							Tovább
+							<img src="<?php bloginfo('template_url') ?>/assets/img/green-long-arrow-right.png" alt="">
+						</div>
+					</a>
 				</div>
+				<div class="icon-block">
+					<div class="icon"><img src="<?php bloginfo('template_url') ?>/assets/img/icon/money.png" alt=""></div>
+					<div class="title"><?php echo $propertiesList["tulajdonsag_2_cim"] ?></div>
+					<p><?php echo $propertiesList["tulajdonsag_2_szoveg"] ?></p>
+					<a href="" class="btn btn-plain">
+						<div class="btn-text img-right">
+							Tovább
+							<img src="<?php bloginfo('template_url') ?>/assets/img/green-long-arrow-right.png" alt="">
+						</div>
+					</a>
+				</div>
+				<div class="icon-block">
+					<div class="icon"><img src="<?php bloginfo('template_url') ?>/assets/img/icon/leaf.png" alt=""></div>
+					<div class="title"><?php echo $propertiesList["tulajdonsag_3_cim"] ?></div>
+					<p><?php echo $propertiesList["tulajdonsag_3_szoveg"] ?></p>
+					<a href="" class="btn btn-plain">
+						<div class="btn-text img-right">
+							Tovább
+							<img src="<?php bloginfo('template_url') ?>/assets/img/green-long-arrow-right.png" alt="">
+						</div>
+					</a>
+				</div>
+				<div class="icon-block">
+					<div class="icon"><img src="<?php bloginfo('template_url') ?>/assets/img/icon/house.png" alt=""></div>
+					<div class="title"><?php echo $propertiesList["tulajdonsag_4_cim"] ?></div>
+					<p><?php echo $propertiesList["tulajdonsag_4_szoveg"] ?></p>
+					<a href="" class="btn btn-plain">
+						<div class="btn-text img-right">
+							Tovább
+							<img src="<?php bloginfo('template_url') ?>/assets/img/green-long-arrow-right.png" alt="">
+						</div>
+					</a>
+				</div>
+
+				<div class="btn btn-green">
+					<div class="btn-text img-right">
+						Beszéljünk
+						<img src="<?php bloginfo('template_url') ?>/assets/img/headset.svg" alt="">
+					</div>
+				</div>
+
+			</div>
+			<div class="last-block image-block">
+				<img src="<?php echo $propertiesList["tulajdonsagok_kep"] ?>" alt="">
 			</div>
 
-		</div>
-		<div class="last-block image-block">
-			<img src="<?php bloginfo('template_url') ?>/assets/img/blocks/staircase.png" alt="">
-		</div>
+			<?php endif; ?>	
+			
 	</div>
 </section>
 
