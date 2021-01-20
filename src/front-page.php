@@ -130,7 +130,7 @@ get_header();
 	<div class="text-center container">
 
 		<?php
-		$knowledge = get_field('tulajdonsagok_blokk');
+		$knowledge = get_field('tudastar_blokk');
 		if( $knowledge ): ?>
 			<h2 class="lead"><span>\</span> <?php echo $knowledge["blokk_alcim"] ?></h2>
 			<h1><?php echo $knowledge["blokk_cim"] ?></h1>
