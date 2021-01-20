@@ -11,28 +11,32 @@ get_header();
 			
 <section class="container-fluid section-hero bg--white">
 	<div class="grid grid-2">
-		<div class="first-block text-block">
-			<h2 class="lead"><span>\</span> <?php the_field('hero_alcim') ?></h2>
-			<h1><?php the_field('hero_cim') ?></h1>
-			<p><?php the_field('hero_szoveg') ?></p>
-			<div class="buttons">
-				<a href="#" class="btn btn-green">
-					<div class="btn-text img-right">
-						Beszéljünk
-						<img src="<?php bloginfo('template_url') ?>/assets/img/headset.svg" alt="">
-					</div>
-				</a>
-				<a href="" class="btn btn-transparent">
-					<div class="btn-text img-right">
-						Több információt szeretnék
-						<img src="<?php bloginfo('template_url') ?>/assets/img/mouse.svg" alt="">
-					</div>
-				</a>
+		<?php
+		$hero = get_field('hero_blokk');
+		if( $hero ): ?>
+			<div class="first-block text-block">
+				<h2 class="lead"><span>\</span> <?php the_field('hero_alcim') ?></h2>
+				<h1><?php the_field('hero_cim') ?></h1>
+				<p><?php the_field('hero_szoveg') ?></p>
+				<div class="buttons">
+					<a href="#" class="btn btn-green">
+						<div class="btn-text img-right">
+							Beszéljünk
+							<img src="<?php bloginfo('template_url') ?>/assets/img/headset.svg" alt="">
+						</div>
+					</a>
+					<a href="" class="btn btn-transparent">
+						<div class="btn-text img-right">
+							Több információt szeretnék
+							<img src="<?php bloginfo('template_url') ?>/assets/img/mouse.svg" alt="">
+						</div>
+					</a>
+				</div>
 			</div>
-		</div>
-		<div class="last-block image-block">
-			<img src="<?php the_field('hero_kep') ?>" alt="">
-		</div>
+			<div class="last-block image-block">
+				<img src="<?php the_field('hero_kep') ?>" alt="">
+			</div>
+		<?php endif; ?>
 	</div>
 </section>
 
