@@ -43,7 +43,7 @@ get_header();
                 <div class="image-card bordered">
                     <div class="card-image">
                         <img class="member" src="<?php the_sub_field('kep') ?>" alt="<?php the_sub_field('nev') ?>">
-                        
+                        <?php var_dump(get_field('logo_szine')) ?>
                         <?php if (get_field('logo_szine') == 'feher') { ?>
                             <img class="logo" src="<?php bloginfo('template_url') ?>/assets/img/logo-mini-white.png" alt="">
                         <?php } else { ?>
