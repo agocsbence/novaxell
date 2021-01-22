@@ -19,7 +19,7 @@ get_header();
 				<h1><?php echo $hero["hero_cim"] ?></h1>
 				<p><?php echo $hero["hero_szoveg"] ?></p>
 				<div class="buttons">
-					<a href="#" class="btn btn-green">
+					<a href="<?php echo esc_url( get_page_link( 23 ) ); ?>#contact" class="btn btn-green">
 						<div class="btn-text img-right">
 							Beszéljünk
 							<img src="<?php bloginfo('template_url') ?>/assets/img/headset.svg" alt="">
@@ -109,7 +109,7 @@ get_header();
 					</a>
 				</div>
 
-				<a href="" class="btn btn-green">
+				<a href="<?php echo esc_url( get_page_link( 23 ) ); ?>#contact" class="btn btn-green">
 					<div class="btn-text img-right">
 						Beszéljünk
 						<img src="<?php bloginfo('template_url') ?>/assets/img/headset.svg" alt="">
@@ -150,7 +150,7 @@ get_header();
 		?>
 	</div>
 	<div class="flex flex-center button-wrapper">
-		<a href="" class="btn btn-green">
+		<a href="<?php echo esc_url( get_page_link( 27 ) ); ?>" class="btn btn-green">
 			<div class="btn-text img-right">
 				Tovább a tudástárra
 				<img src="<?php bloginfo('template_url') ?>/assets/img/long-arrow-right.svg" alt="">

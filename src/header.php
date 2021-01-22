@@ -23,8 +23,8 @@
 				<a href="<?php echo esc_url( get_page_link( 25 ) ); ?>">Technológia</a>
 				<a href="<?php echo esc_url( get_page_link( 27 ) ); ?>">Tudástár</a>
 				<a href="<?php echo esc_url( get_page_link( 21 ) ); ?>">Rólunk</a>
-				<a href="<?php echo esc_url( get_page_link( 23 ) ); ?>">GY.I.K.</a>
-				<a href="<?php echo esc_url( get_page_link( 23 ) ); ?>">Kapcsolat</a>
+				<a href="<?php echo esc_url( get_page_link( 23 ) ); ?>#faq">GY.I.K.</a>
+				<a href="<?php echo esc_url( get_page_link( 23 ) ); ?>#contact">Kapcsolat</a>
 			</div>
 			<div class="buttons desktop-only">
 				<a href="" class="btn btn-transparent">
@@ -50,8 +50,8 @@
 			<a href="<?php echo esc_url( get_page_link( 25 ) ); ?>">Technológia</a>
 			<a href="<?php echo esc_url( get_page_link( 27 ) ); ?>">Tudástár</a>
 			<a href="<?php echo esc_url( get_page_link( 21 ) ); ?>">Rólunk</a>
-			<a href="<?php echo esc_url( get_page_link( 23 ) ); ?>">GY.I.K.</a>
-			<a href="<?php echo esc_url( get_page_link( 23 ) ); ?>">Kapcsolat</a>
+			<a href="<?php echo esc_url( get_page_link( 23 ) ); ?>#faq">GY.I.K.</a>
+			<a href="<?php echo esc_url( get_page_link( 23 ) ); ?>#contact">Kapcsolat</a>
 			<div class="buttons">
 				<a href="" class="btn btn-transparent">
 					<div class="btn-text img-left">
@@ -59,7 +59,7 @@
 						Műszaki adatok
 					</div>
 				</a>
-				<a href="#" class="btn btn-green">
+				<a href="<?php echo esc_url( get_page_link( 23 ) ); ?>#contact" class="btn btn-green">
 					<div class="btn-text img-left">
 						<img src="<?php bloginfo('template_url') ?>/assets/img/headset.svg" alt="">
 						Beszéljünk</div>

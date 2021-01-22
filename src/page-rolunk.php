@@ -12,6 +12,13 @@ get_header();
 <section class="container-fluid section-about-hero bg--white">
     <div class="grid grid-2">
         <div class="first-block text-block">
+            <?php
+            $hero = get_field('hero_blokk');
+            if( $hero ): ?>
+                <h2 class="lead"><span>\</span> <?php echo $hero["blokk_alcim"] ?></h2>
+                <h1><?php echo $hero["blokk_cim"] ?></h1>
+                <p><?php echo $hero["blokk_leiras"] ?></p>
+            <?php endif; ?>
             <h2 class="lead"><span>\</span> A név kötelez</h2>
             <h1>Hagyomány és innováció</h1>
             <p>Minden a családunk 30 éves építőipari tapasztalatával kezdődöt, és egy közös TDK dolgozattal.</p>
