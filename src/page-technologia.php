@@ -54,7 +54,7 @@ get_header();
                         <img src="<?php the_sub_field('ikon') ?>" alt="<?php the_sub_field('cim') ?>">
                         <div class="title"><?php the_sub_field('cim') ?></div>
                     </div>
-                    <p><?php the_sub_field('leírás') ?></p>
+                    <p><?php the_sub_field('leiras') ?></p>
             </div>
 			<?php endwhile; ?>
 		<?php endif; ?>
