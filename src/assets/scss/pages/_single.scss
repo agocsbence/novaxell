@@ -14,3 +14,13 @@
         margin: 2rem 0 5rem;
     }
 }
+.wp-block-media-text {margin: 3rem 0;}
+.has-large-font-size {
+    font-family: $font-display;
+    font-size: 48px;
+    line-height: 58px;
+    @media screen  and (max-width: $tablet){
+        font-size: 28px;
+        line-height: 33px;
+    }
+}
