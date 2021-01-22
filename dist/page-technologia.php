@@ -12,10 +12,13 @@ get_header();
 <section class="container-fluid section-tech-hero bg--white">
     <div class="grid grid-2">
         <div class="first-block text-block">
-            <h2 class="lead"><span>\</span> Bízunk a technológiában</h2>
-            <h1>Szintugrás a hagyományos megoldásokhoz képest</h1>
-            <p>A hőszigetelő anyagok általában kis testsűrűségű, könnyű anyagok. Kiválóan alkalmasak a téli időszakban a meleg bent tartására, de a nyári időszakban nem képesek megakadályozni a túlmelegedést. Ez ellen az épületek hőtároló képessége nyújthat védelmet, ami általában a tömegnek köszönhető. Tehát a nehéz szerkezetű épületek nyári hővédelme biztosított.</p>
-            <p>De mi a helyzet a tetőtér-beépítésekkel, a könnyűszerkezetes épületek hővédelmével? Ezek gyakran túlmelegednek nyáron, aminek az egyetlen ellenszere a nagy energiaköltségű klimatizálás. Volt, idáig. Erre a problémára mostantól a NovaXell cellulóz hőszigetelő anyag nyújt költséghatékony megoldást.</p>
+            <?php
+            $hero = get_field('hero_blokk');
+            if( $hero ): ?>
+                <h2 class="lead"><span>\</span> <?php echo $hero["blokk_alcim"] ?></h2>
+                <h1><?php echo $hero["blokk_cim"] ?></h1>
+                <p><?php echo $hero["blokk_leiras"] ?></p>
+            <?php endif; ?>
         </div>
         <div class="last-block image-block">
             <img src="<?php bloginfo('template_url') ?>/assets/img/blocks/tech-hero.png" alt="">
@@ -24,84 +27,38 @@ get_header();
 </section>
 
 <section class="container bg--pureWhite">
-    <div class="grid grid-2 grid-reverse">
-        <div class="first-block image-block">
-            <img src="<?php bloginfo('template_url') ?>/assets/img/blocks/tech-chair.png" alt="">
+    <?php
+    $properties = get_field('tulajdonsagok_blokk');
+    if( $hproperties ): ?>
+        <div class="grid grid-2 grid-reverse">
+            <div class="first-block image-block">
+                <img src="<?php bloginfo('template_url') ?>/assets/img/blocks/tech-chair.png" alt="">
+            </div>
+            <div class="last-block text-block">
+                <h2 class="lead"><span>\</span> <?php echo $properties["blokk_alcim"] ?></h2>
+                <h1><?php echo $properties["blokk_cim"] ?></h1>
+                <p><?php echo $properties["blokk_leiras"] ?></p>
+            </div>
         </div>
-        <div class="last-block text-block">
-            <h2 class="lead"><span>\</span> Hőtárolás a maximumon</h2>
-            <h1>Nincs több nyári túlmelegedés</h1>
-            <p>A hagyományos cellulóz hőszigetelésekre jellemző kiváló tulajdonságok mellett a NovaXell hőszigetelés fokozottan nagy hőtároló képességgel bír, mivel különleges, fázisváltó anyagot is tartalmaz.</p>
-        </div>
-    </div>
-    <p>A fázisváltó anyagnak köszönhetően jelentős hőtároló képességgel rendelkezik, ezért – más hőszigetelésekkel ellentétben – a NovaXell képes hatékonyan meggátolni a nyári túlmelegedést. Akár 30%-kal csökkenti a klimatizálási költségeket, valamint folyamatosan kiváló komfortkörülményeket biztosít.</p>
+        <p><?php echo $properties["blokk_leiras_2"] ?></p>
+    <?php endif; ?>
 </section>
 
 <section class="container bg--pureWhite section-tech-icon-cards">
     <div class="grid grid-3">
-        <div class="icon-card">
-            <div class="card-title">
-                <img src="<?php bloginfo('template_url') ?>/assets/img/icon/loud.png" alt="">
-                <div class="title">Remek hangszigetelő</div>
+
+        <?php if( have_rows('tulajdonsagok') ): ?>
+			<?php while( have_rows('tulajdonsagok') ): the_row();  ?>
+                <div class="icon-card">
+                    <div class="card-title">
+                        <img src="<?php the_sub_field('ikon') ?>" alt="<?php the_sub_field('cim') ?>">
+                        <div class="title"><?php the_sub_field('cim') ?></div>
+                    </div>
+                    <p><?php the_sub_field('leírás') ?></p>
             </div>
-            <p>Kiváló hangszigetelő a hézagmentes beépítésnek és az anyag struktúrájának köszönhetően.</p>
-        </div>
-        <div class="icon-card">
-            <div class="card-title">
-                <img src="<?php bloginfo('template_url') ?>/assets/img/icon/temperature.png" alt="">
-                <div class="title">Hatékony hőszigetelő</div>
-            </div>
-            <p>A cellulóz hőszigetelő anyag lambda= 0,039W/mK hővezetési tényezővel bír, ami kiváló értéknek számít.</p>
-        </div>
-        <div class="icon-card">
-            <div class="card-title">
-                <img src="<?php bloginfo('template_url') ?>/assets/img/icon/antiallergic.png" alt="">
-                <div class="title">Antiallergén</div>
-            </div>
-            <p>A természetes alapú, antiallergén anyagával sokat tesz a penész- és rágcsálómentes környezetért..</p>
-        </div>
-        <div class="icon-card">
-            <div class="card-title">
-                <img src="<?php bloginfo('template_url') ?>/assets/img/icon/eco.png" alt="">
-                <div class="title">Környezetbarát</div>
-            </div>
-            <p>Az alapanyag összetétele és a szállítási adottságai is kiemelik a versenytársak közül.</p>
-        </div>
-        <div class="icon-card">
-            <div class="card-title">
-                <img src="<?php bloginfo('template_url') ?>/assets/img/icon/bug.png" alt="">
-                <div class="title">Kártevőmentes</div>
-            </div>
-            <p>A felhasznált bórsó távol tartja még akár a legádázabb kártevőket is.</p>
-        </div>
-        <div class="icon-card">
-            <div class="card-title">
-                <img src="<?php bloginfo('template_url') ?>/assets/img/icon/lounge.png" alt="">
-                <div class="title">Légáteresztő</div>
-            </div>
-            <p>Páraáteresztő képességének köszönhetően a falak végre „fellélegezhetnek”.</p>
-        </div>
-        <div class="icon-card">
-            <div class="card-title">
-                <img src="<?php bloginfo('template_url') ?>/assets/img/icon/firefoam.png" alt="">
-                <div class="title">Tűzbiztos</div>
-            </div>
-            <p>Kiváló hangszigetelő a hézagmentes beépítésnek és az anyag struktúrájának köszönhetően.</p>
-        </div>
-        <div class="icon-card">
-            <div class="card-title">
-                <img src="<?php bloginfo('template_url') ?>/assets/img/icon/drop.png" alt="">
-                <div class="title">Páratartalom kiegyenlítő</div>
-            </div>
-            <p>A hőszigetelő képesség romlása nélkül képes nagy mennyiségű nedvességet felvenni a belső levegőből.</p>
-        </div>
-        <div class="icon-card">
-            <div class="card-title">
-                <img src="<?php bloginfo('template_url') ?>/assets/img/icon/moneyefficient.png" alt="">
-                <div class="title">Költséghatékony</div>
-            </div>
-            <p>A könnyű és gyors szállítás, valamint befúvás következtében a technológia rendkívül gazdaságos.</p>
-        </div>
+			<?php endwhile; ?>
+		<?php endif; ?>
+
     </div>
 </section>
 
