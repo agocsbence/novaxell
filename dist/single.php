@@ -2,7 +2,7 @@
 
 <div class="container single-page">
     <div class="single-page-header">
-        <img src="<?php echo the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>" class="single-page-header-image">
+        <img src="<?php the_field('fejlec_kep') ?>" alt="<?php the_title(); ?>" class="single-page-header-image">
         <h1><span>Novaxell</span> - <?php the_title(); ?></h1>
     </div>
     <div class="single-page-content">
