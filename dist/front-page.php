@@ -194,34 +194,7 @@ get_header();
 			<div class="contact-form first-block text-block">
 				<h1 class="small">Írj nekünk</h1>
 				<p>Ha megbízható partnerre van szükséged, ránk számíthatsz. Dobj egy üzenetet, és szakértőnk hamarosan válaszol.</p>
-				<form action="" method="post" class="grid grid-2">
-					<!-- <div class="field field-short">
-						<label for="fname">Név</label>
-						<input type="text" name="fname" id="fname">
-					</div>
-					<div class="field field-short">
-						<label for="fphone">Telefonszám</label>
-						<input type="tel" name="fphone" id="fphone" value="+36 ">
-					</div>
-					<div class="field field-long">
-						<label for="femail">E-mail cím</label>
-						<input type="text" name="femail" id="femail">
-					</div>
-					<div class="field field-long">
-						<label for="fmessage">Üzenet</label>
-						<textarea name="fmessage" id="fmessage" cols="30" rows="10"></textarea>
-					</div>
-					<div class="field field-long">
-						<input type="submit" value="Küldés" id="submitBtn" class="hide">
-						<label for="submitBtn" class="btn btn-green">
-							<div class="btn-text img-right">
-								Küldés
-								<img src="<?php bloginfo('template_url') ?>/assets/img/paper-plane.svg" alt="">
-							</div>
-						</label>
-					</div> -->
-					<?php echo do_shortcode('[contact-form-7 id="80" title="Kapcsolat"]'); ?>
-				</form>
+				<?php echo do_shortcode('[contact-form-7 id="80" title="Kapcsolat"]'); ?>
 			</div>
 			<div class="contact-image last-block image-block">
 				<img src="<?php bloginfo('template_url') ?>/assets/img/blocks/contact.png" alt="">
