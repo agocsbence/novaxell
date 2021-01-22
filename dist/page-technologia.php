@@ -29,7 +29,7 @@ get_header();
 <section class="container bg--pureWhite">
     <?php
     $properties = get_field('tulajdonsagok_blokk');
-    if( $hproperties ): ?>
+    if( $properties ): ?>
         <div class="grid grid-2 grid-reverse">
             <div class="first-block image-block">
                 <img src="<?php bloginfo('template_url') ?>/assets/img/blocks/tech-chair.png" alt="">
@@ -64,48 +64,55 @@ get_header();
 
 <section class="bg--white">
     <div class="container">
-        <div class="grid grid-2">
-            <div class="first-block text-block">
-                <h2 class="lead"><span>\</span> A cellulóz titka</h2>
-                <h1>A hatékonyság az alapoknál kezdődik</h1>
-                <p>A cellulóz hőszigetelés használt újságpapírból készül. A válogatott hulladékpapír alapanyagot több lépésben darálják és finomítják, így cellulóz rostokból álló pelyhesített anyag születik, mely kiváló hőszigetelő. A cellulózba a kártevők elleni védelem miatt, illetve a tűzállóság biztosítása érdekében bórsókat kevernek. </p>
+        <?php
+        $hero2 = get_field('hero_blokk_2');
+        if( $hero2 ): ?>
+            <div class="grid grid-2">
+                <div class="first-block text-block">
+                    <h2 class="lead"><span>\</span> <?php echo $hero2["blokk_alcim"] ?></h2>
+                    <h1><?php echo $hero2["blokk_cim"] ?></h1>
+                    <p><?php echo $hero2["blokk_leiras"] ?></p>
+                </div>
+                <div class="last-block image-block">
+                    <img src="<?php echo $hero2["blokk_kep"] ?>" alt="<?php echo $hero2["blokk_cim"] ?>">
+                </div>
             </div>
-            <div class="last-block image-block">
-                <img src="<?php bloginfo('template_url') ?>/assets/img/blocks/tech-efficiency.png" alt="">
-            </div>
-        </div>
-        <p>A cellulóz hőszigetelés tehát az alapanyagot és az előállítást tekintve is az egyik legkörnyezetkímélőbb, legköltséghatékonyabb hőszigetelési megoldás. Az alkalmazástechnikát tekintve szintén elmondható, hogy gazdaságos megoldásról van szó, hiszen a cellulóz hőszigetelés befúvásos technológiával készül. A kivitelezéshez mindössze 2-3 fő szükséges, hiszen a munkaterületen az anyag a befúvó berendezés csövén keresztül közlekedik, a beépítés pedig a befúvás miatt gyorsan elvégezhető. A kivitelezés sebessége miatt kiemelkedően költséghatékony eljárásról van szó.</p>
+            <p><?php echo $hero2["blokk_leiras_2"] ?></p>
+        <?php endif; ?>
     </div>
 </section>
 
 <section class="bg--pureWhite section-tech-details">
     <div class="container">
         <div class="text-center">
-            <h2 class="lead"><span>\</span> Dokumentumok és műszaki adatok</h2>
-            <h1>Hatékonyság a számok nyelvén</h1>
-            <p class="subtitle">A számok is mellettünk állnak. Ismerd meg közelebbről a NovaXell egyedülálló tulajdonságait!</p>
+
+            <?php
+            $tech = get_field('tech_blokk');
+            if( $tech ): ?>
+                <h2 class="lead"><span>\</span> <?php echo $tech["blokk_alcim"] ?></h2>
+                <h1><?php echo $tech["blokk_cim"] ?></h1>
+                <p class="subtitle"><?php echo $tech["blokk_leiras"] ?></p>
+            <?php endif; ?>
+
         </div>
         <div class="grid grid-2-3">
+
             <?php include get_theme_file_path( '/includes/tech-details.php' ); ?>
+
             <div class="downloads">
-                <a href="" class="btn btn-download" download>
-                    <div class="btn-text img-right">
-                        Tűzveszélyességi osztály besorolás.pdf
-                        <img src="<?php bloginfo('template_url') ?>/assets/img/icon/download.svg" alt="">
-                    </div>
-                </a>
-                <a href="" class="btn btn-download" download>
-                    <div class="btn-text img-right">
-                        Tűzveszélyességi osztály besorolás.pdf
-                        <img src="<?php bloginfo('template_url') ?>/assets/img/icon/download.svg" alt="">
-                    </div>
-                </a>
-                <a href="" class="btn btn-download" download>
-                    <div class="btn-text img-right">
-                        Tűzveszélyességi osztály besorolás.pdf
-                        <img src="<?php bloginfo('template_url') ?>/assets/img/icon/download.svg" alt="">
-                    </div>
-                </a>
+                
+                <?php if( have_rows('tulajdonsagok') ): ?>
+                    <?php while( have_rows('tulajdonsagok') ): the_row();  ?>
+                        <?php $file = get_sub_field('fajl'); ?>
+                        <a href="<?php echo $file['url']; ?>" class="btn btn-download" download>
+                            <div class="btn-text img-right">
+                                <?php echo $file['filename']; ?>
+                                <img src="<?php bloginfo('template_url') ?>/assets/img/icon/download.svg" alt="">
+                            </div>
+                        </a>
+                    <?php endwhile; ?>
+                <?php endif; ?>
+
             </div>
         </div>
     </div>
