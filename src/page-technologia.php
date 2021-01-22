@@ -101,8 +101,8 @@ get_header();
 
             <div class="downloads">
                 
-                <?php if( have_rows('tulajdonsagok') ): ?>
-                    <?php while( have_rows('tulajdonsagok') ): the_row();  ?>
+                <?php if( have_rows('letoltheto_anyagok') ): ?>
+                    <?php while( have_rows('letoltheto_anyagok') ): the_row();  ?>
                         <?php $file = get_sub_field('fajl'); ?>
                         <a href="<?php echo $file['url']; ?>" class="btn btn-download" download>
                             <div class="btn-text img-right">
