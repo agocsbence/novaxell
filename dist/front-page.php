@@ -195,7 +195,7 @@ get_header();
 				<h1 class="small">Írj nekünk</h1>
 				<p>Ha megbízható partnerre van szükséged, ránk számíthatsz. Dobj egy üzenetet, és szakértőnk hamarosan válaszol.</p>
 				<form action="" method="post" class="grid grid-2">
-					<div class="field field-short">
+					<!-- <div class="field field-short">
 						<label for="fname">Név</label>
 						<input type="text" name="fname" id="fname">
 					</div>
@@ -219,7 +219,8 @@ get_header();
 								<img src="<?php bloginfo('template_url') ?>/assets/img/paper-plane.svg" alt="">
 							</div>
 						</label>
-					</div>
+					</div> -->
+					<?php echo do_shortcode('[contact-form-7 id="80" title="Kapcsolat"]'); ?>
 				</form>
 			</div>
 			<div class="contact-image last-block image-block">

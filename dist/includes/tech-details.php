@@ -21,7 +21,7 @@
         <div class="detail-name">
             <img src="<?php bloginfo('template_url') ?>/assets/img/icon/wind.svg" alt="">
             Befúvási sűrűség:
-        </div>
+        </div> 
         <div class="detail-data" style=""></div>
 
         <div class="detail-name padding-left">
