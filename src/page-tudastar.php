@@ -47,7 +47,7 @@ get_header();
         </div>
         <div class="grid grid-3 container">
             <?php
-                $loop = new WP_Query( array( 'post_type' => 'post', 'posts_per_page' => 3, 'offset' => 1 ) );
+                $loop = new WP_Query( array( 'post_type' => 'post', 'posts_per_page' => 3, 'offset' => 2 ) );
                 
                 while ( $loop->have_posts() ) : $loop->the_post(); 
                 
