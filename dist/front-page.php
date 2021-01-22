@@ -159,7 +159,7 @@ get_header();
 	</div>
 </section>
 
-<section class="section-faq bg--white">
+<section id="faq" class="section-faq bg--white">
 	<?php
 	$faq = get_field('gyik_blokk');
 	if( $faq ): ?>
@@ -183,7 +183,7 @@ get_header();
 	</div>
 </section>
 
-<section class="section-contact bg--pureWhite">
+<section id="contact" class="section-contact bg--pureWhite">
 	<div class="text-center container">
 		<h2 class="lead"><span>\</span> Kapcsolat</h2>
 		<h1>Ugorj szintet a hőszigetelésben!</h1>
