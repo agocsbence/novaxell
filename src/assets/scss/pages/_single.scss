@@ -15,16 +15,21 @@
         }
     }
     .single-page-content {
-        margin: 2rem 0 5rem;
+        margin: 7rem 0;
     }
 }
 .wp-block-media-text {margin: 3rem 0;}
+.wp-block-media-text .wp-block-media-text__content {
+    @media screen  and (max-width: $tablet) {
+        padding: 0 !important;
+    }
+}
 .has-large-font-size {
     font-family: $font-display;
     font-size: 48px !important;
-    line-height: 58px;
+    line-height: 58px !important;
     @media screen  and (max-width: $tablet){
-        font-size: 28px;
-        line-height: 33px;
+        font-size: 28px !important;
+        line-height: 33px !important;
     }
 }
