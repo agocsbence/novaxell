@@ -29,10 +29,10 @@ get_header();
                         <a href="#" class="btn btn-blue desktop-only">
                             <div class="btn-text img-left">
                                 <img src="<?php bloginfo('template_url') ?>/assets/img/clock.svg" alt="">
-                                <?php the_field('olvasasi_ido'); ?>
+                                <?php the_field('olvasasi_ido'); ?> Perc
                             </div>
                         </a>
-                        <a href="" class="btn btn-green">
+                        <a href="<?php echo get_permalink(); ?>" class="btn btn-green">
                             <div class="btn-text img-right">
                                 Elolvasom
                                 <img src="<?php bloginfo('template_url') ?>/assets/img/long-arrow-right.svg" alt="">
