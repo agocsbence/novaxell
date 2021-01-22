@@ -104,12 +104,15 @@ get_header();
                 <?php if( have_rows('letoltheto_anyagok') ): ?>
                     <?php while( have_rows('letoltheto_anyagok') ): the_row();  ?>
                         <?php $file = get_sub_field('fajl'); ?>
+                        <?php var_dump($file) ?>
+                        
                         <a href="<?php echo $file['url']; ?>" class="btn btn-download" download>
                             <div class="btn-text img-right">
                                 <?php echo $file['filename']; ?>
                                 <img src="<?php bloginfo('template_url') ?>/assets/img/icon/download.svg" alt="">
                             </div>
                         </a>
+                        
                     <?php endwhile; ?>
                 <?php endif; ?>
 
