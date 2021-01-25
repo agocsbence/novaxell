@@ -27,7 +27,7 @@
 				<a href="<?php echo esc_url( get_page_link( 23 ) ); ?>#contact">Kapcsolat</a>
 			</div>
 			<div class="buttons desktop-only">
-				<a href="" class="btn btn-transparent">
+				<a href="" class="btn btn-transparent btn-tech-details">
 					<div class="btn-text img-left">
 						<img src="<?php bloginfo('template_url') ?>/assets/img/ruler.svg" alt="">
 						Műszaki adatok
@@ -56,7 +56,7 @@
 			<a href="<?php echo esc_url( get_page_link( 23 ) ); ?>#faq">GY.I.K.</a>
 			<a href="<?php echo esc_url( get_page_link( 23 ) ); ?>#contact">Kapcsolat</a>
 			<div class="buttons">
-				<a href="" class="btn btn-transparent">
+				<a href="" class="btn btn-transparent btn-tech-details">
 					<div class="btn-text img-left">
 						<img src="<?php bloginfo('template_url') ?>/assets/img/ruler.svg" alt="">
 						Műszaki adatok
@@ -67,7 +67,7 @@
 						<img src="<?php bloginfo('template_url') ?>/assets/img/headset.svg" alt="">
 						Beszéljünk</div>
 				</a>
-				<div class="tech-details-popup hide">
+				<div class="tech-details-popup hide font-600">
 					<?php include get_theme_file_path( '/includes/tech-details.php' ); ?>
 				</div>
 			</div>

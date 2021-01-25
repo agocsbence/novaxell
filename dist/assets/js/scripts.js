@@ -21,3 +21,9 @@ hamburger.addEventListener("click", function() {
     hamburger.classList.toggle("is-active");
     mobileMenu.classList.toggle("is-active");
 });
+const headerTechData = document.querySelector(".tech-details-popup"),
+      buttonTechData = document.querySelector('.btn-tech-details');
+
+buttonTechData.addEventListener("click", function() {
+    headerTechData.classList.toggle("hide");
+});
