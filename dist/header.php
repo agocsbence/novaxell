@@ -38,6 +38,9 @@
 						<img src="<?php bloginfo('template_url') ?>/assets/img/headset.svg" alt="">
 						Beszéljünk</div>
 				</a>
+				<div class="tech-details-popup hide">
+					<?php include get_theme_file_path( '/includes/tech-details.php' ); ?>
+				</div>
 			</div>
 			<button class="hamburger hamburger--squeeze mobile-only" type="button">
 				<span class="hamburger-box">
@@ -64,6 +67,9 @@
 						<img src="<?php bloginfo('template_url') ?>/assets/img/headset.svg" alt="">
 						Beszéljünk</div>
 				</a>
+				<div class="tech-details-popup hide">
+					<?php include get_theme_file_path( '/includes/tech-details.php' ); ?>
+				</div>
 			</div>
 		</div>
 		<main>

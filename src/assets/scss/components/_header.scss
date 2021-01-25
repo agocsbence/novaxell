@@ -44,6 +44,11 @@ header {
         }
     }
 }
+.buttons {
+    .tech-details-popup {
+        display: none;
+    }
+}
 .mobile-navbar {
     display: flex;
     flex-direction: column;
