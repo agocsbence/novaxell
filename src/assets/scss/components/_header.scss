@@ -47,6 +47,7 @@ header {
 .buttons {
     .tech-details-popup {
         position: relative;
+        cursor: pointer;
         @media screen and (min-width: $tablet) {
             position: absolute;
         }

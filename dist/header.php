@@ -38,7 +38,7 @@
 						<img src="<?php bloginfo('template_url') ?>/assets/img/headset.svg" alt="">
 						Beszéljünk</div>
 				</a>
-				<div class="tech-details-popup hide">
+				<div class="tech-details-popup hide font-600">
 					<?php include get_theme_file_path( '/includes/tech-details.php' ); ?>
 				</div>
 			</div>
