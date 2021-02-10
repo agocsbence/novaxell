@@ -20,9 +20,9 @@
 					</ul>
 					<ul id="footer-menu-contact"><div class="lead">Elérhetőségünk</div>
 						<li><a href=""><img src="<?php bloginfo('template_url') ?>/assets/img/map-marker-.png" alt=""> <?php the_field('levelezesi_cim', 'option'); ?></a></li>
-						<li><a href=""><img src="<?php bloginfo('template_url') ?>/assets/img/phone.svg" alt=""> <?php the_field('telefonszam_1', 'option'); ?></a></li>
-						<li><a href=""><img src="<?php bloginfo('template_url') ?>/assets/img/phone.svg" alt=""> <?php the_field('telefonszam_2', 'option'); ?></a></li>
-						<li><a href=""><img src="<?php bloginfo('template_url') ?>/assets/img/envelope.svg" alt=""> <?php the_field('email_cim', 'option'); ?></a></li>
+						<li><a href="tel:<?php the_field('telefonszam_1', 'option'); ?>"><img src="<?php bloginfo('template_url') ?>/assets/img/phone.svg" alt=""> <?php the_field('telefonszam_1', 'option'); ?></a></li>
+						<li><a href="tel:<?php the_field('telefonszam_2', 'option'); ?>"><img src="<?php bloginfo('template_url') ?>/assets/img/phone.svg" alt=""> <?php the_field('telefonszam_2', 'option'); ?></a></li>
+						<li><a href="mailto:<?php the_field('email_cim', 'option'); ?>"><img src="<?php bloginfo('template_url') ?>/assets/img/envelope.svg" alt=""> <?php the_field('email_cim', 'option'); ?></a></li>
 					</ul>
 				</div>
 				<div class="copyright">
