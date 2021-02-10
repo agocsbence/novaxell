@@ -9,6 +9,7 @@ footer {
         right: 0;
         @media screen and (max-width: $tablet) {
             position: relative;
+            float: right;
         }
     }
     .footer-content {
