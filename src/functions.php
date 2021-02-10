@@ -38,3 +38,22 @@ function register_footer_menu() {
     register_nav_menu('footer-menu',__( 'Footer Menu', 'ferdio' ));
 }
 add_action( 'init', 'register_footer_menu' );
+
+//OPTIONS PAGE
+if( function_exists('acf_add_options_page') ) {
+	
+	acf_add_options_page(array(
+		'page_title' 	=> 'Oldal általános beállítások',
+		'menu_title'	=> 'Általános Beállítások',
+		'menu_slug' 	=> 'theme-general-settings',
+		'capability'	=> 'edit_posts',
+		'redirect'		=> false
+	));
+	
+	acf_add_options_sub_page(array(
+		'page_title' 	=> 'Oldal Lábléc Beállítások',
+		'menu_title'	=> 'Lábléc',
+		'parent_slug'	=> 'theme-general-settings',
+	));
+	
+}
