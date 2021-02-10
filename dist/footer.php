@@ -1,8 +1,6 @@
 </main>
 		<footer class="bg--green">
 
-			<img src="<?php bloginfo('template_url') ?>/assets/img/eublokk.png" alt="Széchenyi 2020" class="eublock">
-
 			<div class="container">
 				<div class="footer-content grid grid-5">
 					<div class="footer-logo">
@@ -30,6 +28,8 @@
 					<p>© Copyright 2020 NovaXell. All rights reserved.</p>
 				</div>
 			</div>
+
+			<img src="<?php bloginfo('template_url') ?>/assets/img/eublokk.png" alt="Széchenyi 2020" class="eublock">
 			
 		</footer>
 		<script src="<?php bloginfo('template_url') ?>/assets/js/scripts.js" type="text/javascript"></script>
