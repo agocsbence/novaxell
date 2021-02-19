@@ -7,9 +7,6 @@
 						<img src="<?php bloginfo('template_url') ?>/assets/img/footer-logo.svg" alt="">
 						<p class="lead">Innováció a hőszigetelésben</p>
 						<p>Új generációs, környezetkímélő hőszigetelés télen-nyáron</p>
-						<div class="hiventures">
-							<img src="<?php bloginfo('template_url') ?>/assets/img/hiventures.png" alt="Hiventures">
-						</div>
 					</div>
 					<ul id="footer-menu-nav"><div class="lead">Navigáció</div>
 						<li><a href="<?php echo esc_url( get_page_link( 23 ) ); ?>">Főoldal</a></li>
@@ -28,6 +25,9 @@
 				<div class="copyright">
 					<p>© Copyright 2020 NovaXell. All rights reserved.</p>
 				</div>
+			</div>
+			<div class="hiventures">
+				<img src="<?php bloginfo('template_url') ?>/assets/img/hiventures.png" alt="Hiventures">
 			</div>
 
 			<img src="<?php bloginfo('template_url') ?>/assets/img/eublokk.png" alt="Széchenyi 2020" class="eublock">
