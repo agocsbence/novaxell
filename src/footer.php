@@ -26,10 +26,11 @@
 					<p>© Copyright 2020 NovaXell. All rights reserved.</p>
 				</div>
 			</div>
-			<div class="hiventures container">
-				<img src="<?php bloginfo('template_url') ?>/assets/img/hiventures.png" alt="Hiventures">
+			<div class="container">
+				<div class="hiventures">
+					<img src="<?php bloginfo('template_url') ?>/assets/img/hiventures.png" alt="Hiventures">
+				</div>
 			</div>
-
 			<img src="<?php bloginfo('template_url') ?>/assets/img/eublokk.png" alt="Széchenyi 2020" class="eublock">
 			
 		</footer>
