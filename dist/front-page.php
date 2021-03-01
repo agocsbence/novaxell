@@ -68,7 +68,7 @@ get_header();
 					<div class="icon"><img src="<?php bloginfo('template_url') ?>/assets/img/icon/fire.png" alt=""></div>
 					<div class="title"><?php echo $propertiesList["tulajdonsag_1_cim"] ?></div>
 					<p><?php echo $propertiesList["tulajdonsag_1_szoveg"] ?></p>
-					<a href="" class="btn btn-plain">
+					<a href="echo $propertiesList['tulajdonsag_1_cikk']" class="btn btn-plain">
 						<div class="btn-text img-right">
 							Tovább
 							<img src="<?php bloginfo('template_url') ?>/assets/img/green-long-arrow-right.png" alt="">
