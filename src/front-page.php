@@ -79,7 +79,7 @@ get_header();
 					<div class="icon"><img src="<?php bloginfo('template_url') ?>/assets/img/icon/money.png" alt=""></div>
 					<div class="title"><?php echo $propertiesList["tulajdonsag_2_cim"] ?></div>
 					<p><?php echo $propertiesList["tulajdonsag_2_szoveg"] ?></p>
-					<a href="" class="btn btn-plain">
+					<a href="<?php echo esc_url( get_permalink($propertiesList["tulajdonsag_2_cikk"]) ); ?>" class="btn btn-plain">
 						<div class="btn-text img-right">
 							Tovább
 							<img src="<?php bloginfo('template_url') ?>/assets/img/green-long-arrow-right.png" alt="">
@@ -90,7 +90,7 @@ get_header();
 					<div class="icon"><img src="<?php bloginfo('template_url') ?>/assets/img/icon/leaf.png" alt=""></div>
 					<div class="title"><?php echo $propertiesList["tulajdonsag_3_cim"] ?></div>
 					<p><?php echo $propertiesList["tulajdonsag_3_szoveg"] ?></p>
-					<a href="" class="btn btn-plain">
+					<a href="<?php echo esc_url( get_permalink($propertiesList["tulajdonsag_3_cikk"]) ); ?>" class="btn btn-plain">
 						<div class="btn-text img-right">
 							Tovább
 							<img src="<?php bloginfo('template_url') ?>/assets/img/green-long-arrow-right.png" alt="">
@@ -101,7 +101,7 @@ get_header();
 					<div class="icon"><img src="<?php bloginfo('template_url') ?>/assets/img/icon/house.png" alt=""></div>
 					<div class="title"><?php echo $propertiesList["tulajdonsag_4_cim"] ?></div>
 					<p><?php echo $propertiesList["tulajdonsag_4_szoveg"] ?></p>
-					<a href="" class="btn btn-plain">
+					<a href="<?php echo esc_url( get_permalink($propertiesList["tulajdonsag_4_cikk"]) ); ?>" class="btn btn-plain">
 						<div class="btn-text img-right">
 							Tovább
 							<img src="<?php bloginfo('template_url') ?>/assets/img/green-long-arrow-right.png" alt="">
