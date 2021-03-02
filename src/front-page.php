@@ -60,15 +60,15 @@ get_header();
 	<div class="grid grid-2 section-properties-grid">
 		
 		<?php
-		$properties = get_field('tulajdonsagok_blokk');
+		$properties = get_field('tulajdonsagok_2_blokk');
 		if( $properties ): ?>
 			<div class="first-block image-block">
-				<img src="<?php echo $properties["tulajdonsagok_kep"] ?>" alt="">
+				<img src="<?php echo $properties["tulajdonsagok_2_kep"] ?>" alt="">
 			</div>
 			<div class="last-block text-block">
-				<h2 class="lead"><span>\</span> <?php echo $properties["tulajdonsagok_alcim"] ?></h2>
-				<h1><?php echo $properties["tulajdonsagok_cim"] ?></h1>
-				<?php echo $properties["tulajdonsagok_szoveg"] ?>
+				<h2 class="lead"><span>\</span> <?php echo $properties["tulajdonsagok_2_alcim"] ?></h2>
+				<h1><?php echo $properties["tulajdonsagok_2_cim"] ?></h1>
+				<?php echo $properties["tulajdonsagok_2_szoveg"] ?>
 			</div>
 		<?php endif; ?>
 
