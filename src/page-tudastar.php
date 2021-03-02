@@ -50,7 +50,7 @@ get_header();
     <div class="container">
         <div class="text-center">
             <h2 class="lead"><span>\</span> NovaXell Tudástár</h2>
-            <h1>Minőségi cikkek, minőségi anyagok</h1>
+            <h1>Minőségi tudás, minőségi anyagok</h1>
             <p class="subtitle">Minden, amit a praktikus, megtérülő és környezetkímélő hőszigetelésekről tudni érdemes.</p>
         </div>
         <div class="grid grid-3 container">

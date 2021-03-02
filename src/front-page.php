@@ -57,6 +57,22 @@ get_header();
 		<?php endif; ?>
 
 	</div>
+	<div class="grid grid-2 section-properties-grid">
+		
+		<?php
+		$properties = get_field('tulajdonsagok_blokk');
+		if( $properties ): ?>
+			<div class="first-block image-block">
+				<img src="<?php echo $properties["tulajdonsagok_kep"] ?>" alt="">
+			</div>
+			<div class="last-block text-block">
+				<h2 class="lead"><span>\</span> <?php echo $properties["tulajdonsagok_alcim"] ?></h2>
+				<h1><?php echo $properties["tulajdonsagok_cim"] ?></h1>
+				<?php echo $properties["tulajdonsagok_szoveg"] ?>
+			</div>
+		<?php endif; ?>
+
+	</div>
 	<div class="grid grid-2 section section-icons">
 		<div class="first-block text-block">
 
@@ -101,7 +117,7 @@ get_header();
 					<div class="icon"><img src="<?php bloginfo('template_url') ?>/assets/img/icon/house.png" alt=""></div>
 					<div class="title"><?php echo $propertiesList["tulajdonsag_4_cim"] ?></div>
 					<p><?php echo $propertiesList["tulajdonsag_4_szoveg"] ?></p>
-					<a href="<?php echo esc_url( get_permalink($propertiesList["tulajdonsag_4_cikk"]) ); ?>" class="btn btn-plain">
+					<a href="<?php echo esc_url( get_permalink($propertiesList["tulajdonsag_4 _cikk"]) ); ?>" class="btn btn-plain">
 						<div class="btn-text img-right">
 							Tovább
 							<img src="<?php bloginfo('template_url') ?>/assets/img/green-long-arrow-right.png" alt="">
