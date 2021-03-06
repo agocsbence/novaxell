@@ -209,7 +209,7 @@ get_header();
 		<div class="grid grid-2">
 			<div class="contact-form first-block text-block">
 				<h1 class="small">Írj nekünk</h1>
-				<p>Ha megbízható partnerre van szükséged, ránk számíthatsz. Dobj egy üzenetet, és szakértőnk hamarosan válaszol.</p>
+				<p>Ha megbízható partnerre van szükséged, ránk számíthatsz. Küldj egy üzenetet, és szakértőnk hamarosan válaszol.</p>
 				<?php echo do_shortcode('[contact-form-7 id="80" title="Kapcsolat"]'); ?>
 			</div>
 			<div class="contact-image last-block image-block">
