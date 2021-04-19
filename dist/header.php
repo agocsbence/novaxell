@@ -17,7 +17,7 @@
 	</head>
 	<body class="body">
 		<header>
-			<a href="<?php echo esc_url( get_page_link( 23 ) ); ?>" class="logo"><img src="<?php bloginfo('template_url') ?>/assets/img/header_logo.svg" alt=""></a>
+			<a href="<?php echo esc_url( get_page_link( 23 ) ); ?>" class="logo"><img src="<?php bloginfo('template_url') ?>/assets/img/header_logo.png" alt="Novaxell"></a>
 			<div class="navbar desktop-only">
 				<a href="<?php echo esc_url( get_page_link( 23 ) ); ?>">Főoldal</a>
 				<a href="<?php echo esc_url( get_page_link( 25 ) ); ?>">Technológia</a>
