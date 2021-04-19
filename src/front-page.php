@@ -20,10 +20,7 @@ get_header();
 				<p><?php echo $hero["hero_szoveg"] ?></p>
 				<div class="buttons">
 					<a href="<?php echo esc_url( get_page_link( 23 ) ); ?>#contact" class="btn btn-green">
-						<div class="btn-text img-right">
-							Beszéljünk
-							<img src="<?php bloginfo('template_url') ?>/assets/img/headset.svg" alt="">
-						</div>
+						<div class="btn-text img-right">Segíthetünk?</div>
 					</a>
 					<a href="" class="btn btn-transparent">
 						<div class="btn-text img-right">
@@ -126,10 +123,7 @@ get_header();
 				</div>
 
 				<a href="<?php echo esc_url( get_page_link( 23 ) ); ?>#contact" class="btn btn-green">
-					<div class="btn-text img-right">
-						Beszéljünk
-						<img src="<?php bloginfo('template_url') ?>/assets/img/headset.svg" alt="">
-					</div>
+					<div class="btn-text img-right">Segíthetünk?</div>
 				</a>
 
 			</div>

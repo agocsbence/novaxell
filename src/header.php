@@ -63,9 +63,7 @@
 					</div>
 				</div>
 				<a href="<?php echo esc_url( get_page_link( 23 ) ); ?>#contact" class="btn btn-green">
-					<div class="btn-text img-left">
-						<img src="<?php bloginfo('template_url') ?>/assets/img/headset.svg" alt="">
-						Beszéljünk</div>
+					<div class="btn-text img-left">Segíthetünk?</div>
 				</a>
 				<div class="tech-details-popup hide font-600">
 					<?php include get_theme_file_path( '/includes/tech-details.php' ); ?>
