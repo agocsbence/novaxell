@@ -34,7 +34,7 @@
     }
 }
 .section-faq {
-    padding-top: 0;
+    padding-top: 5.625rem;
     .accordions-wrapper {margin-top: 4rem;}
 }
 .section-contact {
@@ -91,6 +91,7 @@
     }
 }
 .section-knowledge {
+    padding-bottom: 0;
     .grid {
         grid-template-rows: 1fr auto;
         break-inside: avoid;

@@ -18,17 +18,17 @@ get_header();
 				<h2 class="lead"><span>\</span> <?php echo $hero["hero_alcim"] ?></h2>
 				<h1><?php echo $hero["hero_cim"] ?></h1>
 				<p><?php echo $hero["hero_szoveg"] ?></p>
-				<div class="buttons">
-					<a href="<?php echo esc_url( get_page_link( 23 ) ); ?>#contact" class="btn btn-green">
+				<!-- <div class="buttons">
+					<a href="<?php // echo esc_url( get_page_link( 23 ) ); ?>#contact" class="btn btn-green">
 						<div class="btn-text img-right">Segíthetünk?</div>
 					</a>
 					<a href="" class="btn btn-transparent">
 						<div class="btn-text img-right">
 							Több információt szeretnék
-							<img src="<?php bloginfo('template_url') ?>/assets/img/mouse.svg" alt="">
+							<img src="<?php // bloginfo('template_url') ?>/assets/img/mouse.svg" alt="">
 						</div>
 					</a>
-				</div>
+				</div> -->
 			</div>
 			<div class="last-block image-block">
 				<img src="<?php echo $hero["hero_kep"] ?>" alt="">
