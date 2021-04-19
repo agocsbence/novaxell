@@ -1,6 +1,6 @@
 const headerTechData = document.querySelector(".tech-details-popup"),
       buttonTechData = document.querySelector('.btn-tech-details');
 
-buttonTechData.addEventListener("click", function() {
+buttonTechData.addEventListener("mouseover", function() {
     headerTechData.classList.toggle("hide");
 });
