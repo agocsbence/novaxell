@@ -46,7 +46,12 @@ header {
 }
 .buttons {
     .btn-tech-details {
-        cursor: url('../img/heart.png'), auto;
+        cursor: pointer;
+        &:hover {
+            .tech-details-popup {
+                display: block;
+            }        
+        }
     }
     .tech-details-popup {
         position: relative;

@@ -27,13 +27,13 @@
 				<a href="<?php echo esc_url( get_page_link( 23 ) ); ?>#contact">Kapcsolat</a>
 			</div>
 			<div class="buttons desktop-only">
-				<div class="btn btn-transparent btn-tech-details">
+				<div class="btn btn-green btn-tech-details">
 					<div class="btn-text img-left">
 						<img src="<?php bloginfo('template_url') ?>/assets/img/ruler.svg" alt="">
 						Műszaki adatok
 					</div>
 				</div>
-				<a href="#" class="btn btn-green">
+				<a href="<?php echo esc_url( get_page_link( 23 ) ); ?>#contact" class="btn btn-green">
 					<div class="btn-text img-left">Segíthetünk?</div>
 				</a>
 				<div class="tech-details-popup hide font-600">
