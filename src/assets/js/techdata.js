@@ -1,6 +1,10 @@
-const headerTechData = document.querySelector(".tech-details-popup"),
-      buttonTechData = document.querySelector('.btn-tech-details');
+var headerTechData = document.querySelector(".tech-details-popup"),
+    buttonTechData = document.querySelector('.btn-tech-details');
 
-buttonTechData.addEventListener("mouseover", function() {
-    headerTechData.classList.toggle("hide");
+buttonTechData.addEventListener("mouseenter", function() {
+    headerTechData.classList.add("hide");
+});
+
+buttonTechData.addEventListener("mouseleave", function() {
+    headerTechData.classList.remove("hide");
 });

@@ -47,16 +47,10 @@ header {
 .buttons {
     .btn-tech-details {
         cursor: pointer;
-        &:hover {
-            .tech-details-popup {
-                display: block !important;
-            }        
-        }
     }
     .tech-details-popup {
         position: relative;
         cursor: pointer;
-        display: none;
         @media screen and (min-width: $tablet) {
             position: absolute;
         }
