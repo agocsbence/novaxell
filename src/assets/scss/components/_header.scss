@@ -49,13 +49,14 @@ header {
         cursor: pointer;
         &:hover {
             .tech-details-popup {
-                display: block;
+                display: block !important;
             }        
         }
     }
     .tech-details-popup {
         position: relative;
         cursor: pointer;
+        display: none;
         @media screen and (min-width: $tablet) {
             position: absolute;
         }

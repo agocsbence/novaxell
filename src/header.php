@@ -29,14 +29,14 @@
 			<div class="buttons desktop-only">
 				<div class="btn btn-green btn-tech-details">
 					<div class="btn-text img-left">
-						<img src="<?php bloginfo('template_url') ?>/assets/img/ruler.svg" alt="">
+						<!-- <img src="<?php // bloginfo('template_url') ?>/assets/img/ruler.svg" alt=""> -->
 						Műszaki adatok
 					</div>
 				</div>
 				<a href="<?php echo esc_url( get_page_link( 23 ) ); ?>#contact" class="btn btn-green">
 					<div class="btn-text img-left">Segíthetünk?</div>
 				</a>
-				<div class="tech-details-popup hide font-600">
+				<div class="tech-details-popup font-600">
 					<?php include get_theme_file_path( '/includes/tech-details.php' ); ?>
 				</div>
 			</div>
